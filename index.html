@@ -5,11 +5,721 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design stripe</title>
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
 
+    <header class="cus-site-header">
+        <div class="container">
+            <div class="header-content-holder">
+                <a href="/" class="head-logo">
+                    <img src="assets/images/DesignStrips.svg" alt="Logo">
+                </a>
+                <div class="header-right">
+                    <a href="#" class="book-call-btn site-btn">Get in Touch</a>
+                    <button class="menu-btn" type="button" id="menuBtn">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mega-menu-holder">
+        <div class="mega-menu-content-box">
+            <button class="cus-close-menu" id="closeMenuBtn">
+                <span class="close-line"></span>
+                <span class="close-line"></span>
+            </button>
+            <div class="nav-text">
+                <h4>Navigation</h4>
+            </div>
+            <div class="menu-set-holder">
+                <div class="menu-set-holder-left">
+                    <div class="menu-set menu-set-1">
+                        <button type="button">
+                            Services
+                            <img src="assets/images/menu-arrow.png" alt="Arrow">
+                        </button>
+                        <button type="button">
+                            Technologies
+                            <img src="assets/images/menu-arrow.png" alt="Arrow">
+                        </button>
+                        <a href="work-portfolio">
+                            Case Studies
+                            <span>10</span>
+                        </a>
+                        <a href="#">
+                            Insights
+                            <img src="assets/images/menu-arrow.png" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="menu-set menu-set-2">
+                        <button type="button" class="selected-btn-parent">
+                            Services
+                            <img src="assets/images/menu-arrow-back.png" alt="Arrow">
+                        </button>
+                        <button type="button">
+                            Mobile App Dev
+                        </button>
+                        <a href="#">
+                            Website Dev
+                        </a>
+
+                    </div>
+                    <div class="menu-set menu-set-3">
+                        <button type="button">
+                            Services
+                            <img src="assets/images/menu-arrow.png" alt="Arrow">
+                        </button>
+                        <button class="selected-btn-parent" type="button">
+                            Technologies
+                            <img src="assets/images/menu-arrow-back.png" alt="Arrow">
+                        </button>
+                        <a href="#">
+                            Languages
+
+                        </a>
+                        <a href="#">
+                            Platforms
+                        </a>
+                    </div>
+                </div>
+                <div class="menu-set-holder-right">
+
+                    <div class="hover-box h-box-1">
+                        <h4>Primary</h4>
+                        <ul>
+                            <li>
+                                <a href="/custom-mobile-app-development">Mobile App Development Service</a>
+                            </li>
+
+                            <li>
+                                <a href="/flutter-app-development">Flutter App Development</a>
+                            </li>
+                            <li>
+                                <a href="/react-native-mobile-app-development">React Native App Development</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hover-box h-box-2">
+                        <h4>Primary</h4>
+                        <ul>
+                            <li>
+                                <a href="/web-development">Web Development</a>
+                            </li>
+
+                            <li>
+                                <a href="/custom-website-development-service">Custom website Development</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hover-box h-box-3">
+                        <h4>IT Infrastructure</h4>
+                        <ul>
+                            <li><a href="it-infrastructure-solutions#lanWan">LAN & WAN Networking</a></li>
+                            <li><a href="it-infrastructure-solutions#networkAndCyerSecurity">Network and Cyber
+                                    Security</a></li>
+                            <li><a href="it-infrastructure-solutions#serverAndStorage">Server and Storage</a></li>
+                            <li><a href="it-infrastructure-solutions#desktopsLaptops">Desktops, Laptops and thin
+                                    Clients</a></li>
+                            <li><a href="it-infrastructure-solutions#DatacenterPower">Datacenter and Power</a></li>
+                            <li><a href="it-infrastructure-solutions#wifiSolutions">Wifi Solutions</a></li>
+                            <li><a href="it-infrastructure-solutions#ipSurveillance">IP Surveillance</a></li>
+                            <li><a href="it-infrastructure-solutions#accessControl">Access Control</a></li>
+                            <li><a href="it-infrastructure-solutions#structuredCabling">Structured Cabling</a></li>
+                            <li><a href="it-infrastructure-solutions#ipTelephony">IP Telephony</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hover-box h-box-4">
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>
+                                <a href="/asp-net">.Net</a>
+                            </li>
+
+                            <li>
+                                <a href="/expert-html5-developer-for-hire">HTML5</a>
+                            </li>
+                            <li>
+                                <a href="/java-development">Java</a>
+                            </li>
+                            <li>
+                                <a href="/nodejs">Node.Js</a>
+                            </li>
+                            <li>
+                                <a href="/php">PHP</a>
+                            </li>
+                            <li>
+                                <a href="/python-development-company">Python</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hover-box h-box-5">
+                        <h4>Platforms</h4>
+                        <ul>
+                            <li>
+                                <a href="/azure-consulting-services">Azure</a>
+                            </li>
+
+                            <li>
+                                <a href="/gcp-consulting-services">GCP</a>
+                            </li>
+                            <li>
+                                <a href="/oracle-consulting-services">Oracle</a>
+                            </li>
+                            <li>
+                                <a href="/sap-consulting-services">SAP</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hover-box h-box-6">
+                        <h4>Insights</h4>
+                        <ul>
+                            <li>
+                                <a href="/about-us">About Us</a>
+                            </li>
+
+                            <li>
+                                <a href="contact-page">Contact Us</a>
+                            </li>
+                        </ul>
+                        <a href="assets/images/Pixcile-Company-Deck-US.pdf" class="deck-btn">
+                            Download Deck
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cus-menu-bottom">
+                <div class="cus-menu-bottom-left">
+                    <p>Follow us</p>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/pixciletechnology/">
+                                <img src="assets/images/facebook-icon.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/pixcile.technologies/">
+                                <img src="assets/images/instagram-icon.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/17865272456">
+                                <img src="assets/images/whatsapp-icon.png" alt="Whatsapp">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@pixcile-technologies">
+                                <img src="assets/images/youtube-icon.png" alt="Youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/Pixcile_Tech">
+                                <img src="assets/images/twitter-icon.png" alt="Twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button type="button" class="get-in-touch-header open-form">
+                    Get In Touch
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="main-banner-sec">
+        <div class="container">
+            <div class="bnn-top">
+                <h1>Designing Digital <br>
+                    Journeys</h1>
+            </div>
+            <div class="bnn-b-row">
+                <div class="bnn-bc1">
+                    <span>500</span>
+                    <p>Fulfilled Deliveries</p>
+                </div>
+                <div class="bnn-bc2">
+                    <div class="touch-block">
+                        <p>Simplify your design journey with best
+                            e-commerce, website and design solutions</p>
+                        <a href="#" class="touch-ico">
+                            <img src="assets/images/roll.png" alt="">
+                            <video src="assets/videos/avatar.mp4" autoplay muted loop playsinline></video>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-sec">
+        <div class="container">
+            <div class="work-row">
+                <div class="work-col1">
+                    <h2>Work</h2>
+                    <p>A collection of our carefully crafted work, built from the ground up by our skilled team.</p>
+                    <a href="#" class="site-btn">See All</a>
+                </div>
+                <div class="work-col2">
+                    <div class="swiper work-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <a href="#">
+                                        <img src="assets/images/workcard-01-min.png" alt="">
+                                        <h4>Synchronised Quiz - App</h4>
+                                        <p>App Design And Development | UIUX</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <a href="#">
+                                        <img src="assets/images/workcard-02-min.png" alt="">
+                                        <h4>AA Studios - Wesbite Design</h4>
+                                        <p>Website Design and Development | UIUX</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <a href="#">
+                                        <img src="assets/images/workcard-03-min.png" alt="">
+                                        <h4>Mauve Originals - Clothing Brand</h4>
+                                        <p>Website Design And Development | UIUX</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <a href="#">
+                                        <img src="assets/images/workcard-04-min.png" alt="">
+                                        <h4>Al Quran Al Kreem - App</h4>
+                                        <p>App Design And Development | UIUX</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <a href="#">
+                                        <img src="assets/images/workcard-05-min.png" alt="">
+                                        <h4>Pleniage - E-Commerce Platform</h4>
+                                        <p>Website Design and Development | UIUX</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="work-card">
+                                    <a href="#">
+                                        <img src="assets/images/workcard-06-min.png" alt="">
+                                        <h4>DHP - On Demand Application For Overseas Pakistani</h4>
+                                        <p>App Design And Development | UIUX</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="love-sec">
+        <div class="container">
+            <span>What we love to do</span>
+            <div class="love-top-row">
+                <div class="lt-col1">
+                    <ul class="tabs-nav">
+                        <li class="active">E-commerce</li>
+                        <li>Website Design</li>
+                        <li>App Design</li>
+                        <li>Brand Design</li>
+                    </ul>
+                </div>
+                <div class="lt-col2">
+                    <div class="tabs-content">
+                        <div class="tab-content active">
+                            <div class="cs-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="csl-desc">
+                                            <span>Recently Complete Study</span>
+                                            <b>Plenaige</b>
+                                        </div>
+                                        <img src="assets/images/pleaniage-cs.png" alt="">
+                                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
+                                                fill="white" />
+                                            <path
+                                                d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="cs-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="csl-desc">
+                                            <span>Recently Complete Study</span>
+                                            <b>Plenaige</b>
+                                        </div>
+                                        <img src="assets/images/pleaniage-cs.png" alt="">
+                                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
+                                                fill="white" />
+                                            <path
+                                                d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="csl-desc">
+                                            <span>Recently Complete Study</span>
+                                            <b>Plenaige</b>
+                                        </div>
+                                        <img src="assets/images/pleaniage-cs.png" alt="">
+                                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
+                                                fill="white" />
+                                            <path
+                                                d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="cs-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="csl-desc">
+                                            <span>Recently Complete Study</span>
+                                            <b>Plenaige</b>
+                                        </div>
+                                        <img src="assets/images/pleaniage-cs.png" alt="">
+                                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
+                                                fill="white" />
+                                            <path
+                                                d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="csl-desc">
+                                            <span>Recently Complete Study</span>
+                                            <b>Plenaige</b>
+                                        </div>
+                                        <img src="assets/images/pleaniage-cs.png" alt="">
+                                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
+                                                fill="white" />
+                                            <path
+                                                d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="csl-desc">
+                                            <span>Recently Complete Study</span>
+                                            <b>Plenaige</b>
+                                        </div>
+                                        <img src="assets/images/pleaniage-cs.png" alt="">
+                                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
+                                                fill="white" />
+                                            <path
+                                                d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="cs-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="csl-desc">
+                                            <span>Recently Complete Study</span>
+                                            <b>Plenaige</b>
+                                        </div>
+                                        <img src="assets/images/pleaniage-cs.png" alt="">
+                                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
+                                                fill="white" />
+                                            <path
+                                                d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="csl-desc">
+                                            <span>Recently Complete Study</span>
+                                            <b>Plenaige</b>
+                                        </div>
+                                        <img src="assets/images/pleaniage-cs.png" alt="">
+                                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
+                                                fill="white" />
+                                            <path
+                                                d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="csl-desc">
+                                            <span>Recently Complete Study</span>
+                                            <b>Plenaige</b>
+                                        </div>
+                                        <img src="assets/images/pleaniage-cs.png" alt="">
+                                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
+                                                fill="white" />
+                                            <path
+                                                d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="csl-desc">
+                                            <span>Recently Complete Study</span>
+                                            <b>Plenaige</b>
+                                        </div>
+                                        <img src="assets/images/pleaniage-cs.png" alt="">
+                                        <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
+                                                fill="white" />
+                                            <path
+                                                d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
+                                                fill="white" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="love-brands">
+            <div class="swiper marquee-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-02.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-03.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-04.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-05.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-06.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-07.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-08.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-09.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-02.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-03.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-04.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-05.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-06.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-07.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-08.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="l-block">
+                            <img src="assets/images/mq-09.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".work-swiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop: true,
+            speed: 800,
+            autoplay: {
+                delay: 3000,
+            },
+        });
+
+
+
+        var swiper = new Swiper(".marquee-swiper", {
+            slidesPerView: "auto",
+            spaceBetween: 100,
+            loop: true,
+            speed: 3500,
+            autoplay: {
+                delay: 0,
+            },
+        });
+
+
+
+
+
+
+
+        const tabsNav = document.querySelectorAll('.tabs-nav li');
+        const tabsContent = document.querySelectorAll('.tabs-content .tab-content');
+
+        tabsNav.forEach((items, ind) => {
+            items.addEventListener('click', () => {
+                tabsNav.forEach((remove) => {
+                    remove.classList.remove('active')
+                })
+
+                items.classList.add('active')
+
+                tabsContent.forEach((content) => {
+                    content.classList.remove('active')
+                })
+
+                tabsContent[ind].classList.add('active')
+            })
+        })
+    </script>
 </body>
 
 </html>
