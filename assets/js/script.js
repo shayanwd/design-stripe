@@ -13,22 +13,6 @@ gsap.ticker.add((time) => {
 // Disable lag smoothing in GSAP to prevent any delay in scroll animations
 gsap.ticker.lagSmoothing(0);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', () => {
     // Menu functionality
     const menuBtn = document.getElementById('menuBtn');
@@ -83,6 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const showMenu = () => {
         megaMenuHolder.classList.add('show');
         
+        // Reset menu state when showing
+        resetMenuSets();
+        hideAllHoverBoxes();
+        resetMenuColors();
+        
         menuItems.forEach((item, index) => {
             setTimeout(() => {
                 item.style.opacity = '1';
@@ -96,8 +85,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 500 + (menuItems.length * 100));
     };
 
+    const hideMenu = () => {
+        megaMenuHolder.classList.remove('show');
+        
+        // Reset menu items animation state
+        menuItems.forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+        });
+
+        // Reset menu bottom animation state
+        menuBottom.style.opacity = '0';
+        menuBottom.style.transform = 'translateY(20px)';
+        
+        // Reset menu state
+        setTimeout(() => {
+            resetMenuSets();
+            hideAllHoverBoxes();
+            resetMenuColors();
+        }, 300);
+    };
+
     // Helper function to reset menu sets to initial state
     const resetMenuSets = () => {
+        const menuSet1 = document.querySelector('.menu-set-1');
+        const menuSet2 = document.querySelector('.menu-set-2');
+        const menuSet3 = document.querySelector('.menu-set-3');
+
         menuSet1.style.display = 'flex';
         menuSet1.style.opacity = '1';
         menuSet1.style.transform = 'translateX(0)';
@@ -111,62 +125,17 @@ document.addEventListener('DOMContentLoaded', () => {
         menuSet3.style.transform = 'translateX(-20px)';
     };
 
-    // Update hideMenu function
-    const hideMenu = () => {
-        menuItems.forEach(item => {
-            item.style.opacity = '0';
-            item.style.transform = 'translateY(20px)';
-        });
-        menuBottom.style.opacity = '0';
-        menuBottom.style.transform = 'translateY(20px)';
-        
-        // Hide all hover boxes when closing menu
-        hideAllHoverBoxes();
-        // Reset menu colors
-        resetMenuColors();
-        // Reset menu sets to initial state
-        resetMenuSets();
-        
-        megaMenuHolder.classList.remove('show');
-    };
-
-    // Event listeners for menu functionality
-    menuBtn.addEventListener('click', showMenu);
-    closeMenuBtn.addEventListener('click', hideMenu);
-    megaMenuHolder.addEventListener('click', (e) => {
-        if (e.target === megaMenuHolder) {
-            hideMenu();
-        }
-    });
-    menuLinks.forEach((menuuitem)=>{
-        menuuitem.addEventListener('click',(ss)=>{
-            hideMenu();
-        });
-    })
-
-    // Event listeners for mouse animations
-    menuBtn.addEventListener('mousemove', handleMenuBtnMouseMove);
-    menuBtn.addEventListener('mouseleave', resetMenuBtnPosition);
-    closeMenuBtn.addEventListener('mousemove', handleCloseBtnMouseMove);
-    closeMenuBtn.addEventListener('mouseleave', resetCloseBtnPosition);
-
-    // Escape key functionality
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && megaMenuHolder.classList.contains('show')) {
-            hideMenu();
-        }
-    });
-
-    // Menu set navigation
-    const menuSet1 = document.querySelector('.menu-set-1');
-    const menuSet2 = document.querySelector('.menu-set-2');
-    const menuSet3 = document.querySelector('.menu-set-3');
-    const hoverBoxes = document.querySelectorAll('.hover-box');
-
     // Helper function to hide all hover boxes
     const hideAllHoverBoxes = () => {
-        hoverBoxes.forEach(box => {
+        document.querySelectorAll('.hover-box').forEach(box => {
             box.style.display = 'none';
+        });
+    };
+
+    // Helper function to reset menu colors
+    const resetMenuColors = () => {
+        document.querySelectorAll('.menu-set button, .menu-set a').forEach(item => {
+            item.classList.remove('selected-btn');
         });
     };
 
@@ -184,94 +153,102 @@ document.addEventListener('DOMContentLoaded', () => {
                 showSet.style.transform = 'translateX(0)';
             }, 50);
         }, 300);
+
+        // Hide hover boxes when switching menus
+        hideAllHoverBoxes();
+        resetMenuColors();
     };
 
-    // Initialize menu sets
-    menuSet2.style.display = 'none';
-    menuSet3.style.display = 'none';
-    hideAllHoverBoxes();
+    // Menu navigation setup
+    const setupMenuNavigation = () => {
+        const menuSet1 = document.querySelector('.menu-set-1');
+        const menuSet2 = document.querySelector('.menu-set-2');
+        const menuSet3 = document.querySelector('.menu-set-3');
 
-    // Services button click handler
-    const servicesBtn = menuSet1.querySelector('button:nth-child(1)');
-    servicesBtn.addEventListener('click', () => {
-        switchMenuSets(menuSet1, menuSet2);
-    });
+        // Services navigation
+        const servicesBtn = menuSet1.querySelector('button:nth-child(1)');
+        servicesBtn?.addEventListener('click', () => {
+            switchMenuSets(menuSet1, menuSet2);
+        });
 
-    // Technologies button click handler
-    const techBtn = menuSet1.querySelector('button:nth-child(2)');
-    techBtn.addEventListener('click', () => {
-        switchMenuSets(menuSet1, menuSet3);
-    });
+        // Technologies navigation
+        const techBtn = menuSet1.querySelector('button:nth-child(2)');
+        techBtn?.addEventListener('click', () => {
+            switchMenuSets(menuSet1, menuSet3);
+        });
 
-    // Back button handlers
-    const serviceBackBtn = menuSet2.querySelector('button:nth-child(1)');
-    serviceBackBtn.addEventListener('click', () => {
-        switchMenuSets(menuSet2, menuSet1);
-    });
+        // Back buttons
+        const serviceBackBtn = menuSet2.querySelector('.selected-btn-parent');
+        serviceBackBtn?.addEventListener('click', () => {
+            switchMenuSets(menuSet2, menuSet1);
+        });
 
-    const techBackBtn = menuSet3.querySelector('button:nth-child(2)');
-    techBackBtn.addEventListener('click', () => {
-        switchMenuSets(menuSet3, menuSet1);
-    });
+        const techBackBtn = menuSet3.querySelector('.selected-btn-parent');
+        techBackBtn?.addEventListener('click', () => {
+            switchMenuSets(menuSet3, menuSet1);
+        });
 
-    // Helper function to reset all menu item colors
-    const resetMenuColors = () => {
-        document.querySelectorAll('.menu-set button, .menu-set a').forEach(item => {
-            item.classList.remove('selected-btn');
+        // Setup hover effects for menu set 2
+        setupHoverEffects(menuSet2, [
+            { button: 'button:nth-child(2)', box: '.h-box-1' },
+            { button: 'a:nth-child(3)', box: '.h-box-2' }
+        ]);
+
+        // Setup hover effects for menu set 3
+        setupHoverEffects(menuSet3, [
+            { button: 'a:nth-child(3)', box: '.h-box-4' },
+            { button: 'a:nth-child(4)', box: '.h-box-5' }
+        ]);
+
+        // Insights hover effect
+        const insightsBtn = menuSet1.querySelector('a:nth-child(4)');
+        insightsBtn?.addEventListener('mouseenter', () => {
+            hideAllHoverBoxes();
+            resetMenuColors();
+            insightsBtn.classList.add('selected-btn');
+            document.querySelector('.h-box-6').style.display = 'block';
         });
     };
 
-    // Hover handlers for menu set 2
-    const mobileAppBtn = menuSet2.querySelector('button:nth-child(2)');
-    const websiteDevBtn = menuSet2.querySelector('a:nth-child(3)');
-    const trendingBtn = menuSet2.querySelector('a:nth-child(4)');
+    // Helper function to setup hover effects
+    const setupHoverEffects = (menuSet, config) => {
+        config.forEach(({ button, box }) => {
+            const btn = menuSet.querySelector(button);
+            btn?.addEventListener('mouseenter', () => {
+                hideAllHoverBoxes();
+                resetMenuColors();
+                btn.classList.add('selected-btn');
+                document.querySelector(box).style.display = 'block';
+            });
+        });
+    };
 
-    mobileAppBtn.addEventListener('mouseenter', () => {
-        hideAllHoverBoxes();
-        resetMenuColors();
-        mobileAppBtn.classList.add('selected-btn');
-        document.querySelector('.h-box-1').style.display = 'block';
+    // Initialize menu
+    setupMenuNavigation();
+    resetMenuSets();
+    hideAllHoverBoxes();
+
+    // Event listeners for menu functionality
+    menuBtn.addEventListener('click', showMenu);
+    closeMenuBtn.addEventListener('click', hideMenu);
+    
+    // Close menu when clicking outside
+    megaMenuHolder.addEventListener('click', (e) => {
+        if (e.target === megaMenuHolder) {
+            hideMenu();
+        }
     });
 
-    websiteDevBtn.addEventListener('mouseenter', () => {
-        hideAllHoverBoxes();
-        resetMenuColors();
-        websiteDevBtn.classList.add('selected-btn');
-        document.querySelector('.h-box-2').style.display = 'block';
+    // Close menu when clicking on links
+    menuLinks.forEach(menuItem => {
+        menuItem.addEventListener('click', hideMenu);
     });
 
-    trendingBtn.addEventListener('mouseenter', () => {
-        hideAllHoverBoxes();
-        resetMenuColors();
-        trendingBtn.classList.add('selected-btn');
-        document.querySelector('.h-box-3').style.display = 'block';
-    });
-
-    // Hover handlers for menu set 3
-    const languagesBtn = menuSet3.querySelector('a:nth-child(3)');
-    const platformsBtn = menuSet3.querySelector('a:nth-child(4)');
-
-    languagesBtn.addEventListener('mouseenter', () => {
-        hideAllHoverBoxes();
-        resetMenuColors();
-        languagesBtn.classList.add('selected-btn');
-        document.querySelector('.h-box-4').style.display = 'block';
-    });
-
-    platformsBtn.addEventListener('mouseenter', () => {
-        hideAllHoverBoxes();
-        resetMenuColors();
-        platformsBtn.classList.add('selected-btn');
-        document.querySelector('.h-box-5').style.display = 'block';
-    });
-
-    // Insights click handler
-    const insightsBtn = menuSet1.querySelector('a:nth-child(4)');
-    insightsBtn.addEventListener('click', () => {
-        hideAllHoverBoxes();
-        resetMenuColors();
-        insightsBtn.classList.add('selected-btn');
-        document.querySelector('.h-box-6').style.display = 'block';
+    // Close menu with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && megaMenuHolder.classList.contains('show')) {
+            hideMenu();
+        }
     });
 });
 
