@@ -10,6 +10,7 @@
 body {
     font-family: "Plus Jakarta Sans", serif;
     font-style: normal;
+    overflow-x: clip;
 }
 
 .container {
@@ -410,7 +411,51 @@ img {
 
 
 
+/* LOADER */
+.screen-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s;
+}
 
+@keyframes loadd {
+    0% {
+        stroke-dashoffset: 130;
+        fill: transparent;
+    }
+
+    90% {
+        fill: transparent;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        fill: #fff;
+    }
+}
+
+.screen-ico svg path {
+    stroke-width: 0.2px;
+    stroke: #fff;
+    stroke-dasharray: 128;
+    transition: all 1s;
+    stroke-dashoffset: 130;
+    animation: loadd 1s linear forwards;
+}
+
+.screen-loader.loaded {
+    transform: translateX(100%);
+}
+
+/* LOADER END */
 
 
 
@@ -538,7 +583,10 @@ a.touch-ico video {
     }
 }
 
-
+h1.spplit .line {
+    padding-bottom: 10px;
+    overflow: hidden;
+}
 
 
 
@@ -603,6 +651,7 @@ a.touch-ico video {
 
 .work-swiper {
     overflow: visible;
+    width: 130% !important;
 }
 
 .work-swiper::after {
@@ -659,7 +708,59 @@ a.touch-ico video {
 
 
 
+/* WORK HORIJONTAL SKROLL */
+.work-scroll-pinner {
+    min-height: 300vh;
+}
 
+.work-sec.work-scroll {
+    min-height: 100vh;
+    padding: 60px 0px 120px;
+    display: flex;
+    align-items: flex-end;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.work-row.horizontal {
+    width: fit-content;
+    grid-template-columns: max-content max-content max-content;
+    gap: 100px;
+}
+
+.work-scroll-traveller {
+    width: fit-content;
+}
+
+.work-col2 {
+    display: flex;
+    gap: 33px;
+}
+
+.work-card {
+    width: 372px;
+    max-width: 100%;
+}
+
+.work-col3 {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.work-col3 span {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 70px;
+    letter-spacing: -0.035em;
+    text-align: center;
+    word-spacing: 0.035em;
+    display: block;
+}
 
 
 
