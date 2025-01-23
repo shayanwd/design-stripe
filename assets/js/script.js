@@ -449,3 +449,27 @@ if (slid) {
     });
 }
 
+
+var swiper = new Swiper(".challenge-swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 70,
+    rewind: true,
+    speed: 800,
+    autoplay: {
+        delay: 3000,
+    },
+    breakpoints: {
+        100: {
+            spaceBetween: 20,
+        },
+        768: {
+            spaceBetween: 30,
+        },
+        990: {
+            spaceBetween: 40,
+        },
+        1024: {
+            spaceBetween: 70,
+        },
+    }
+});
