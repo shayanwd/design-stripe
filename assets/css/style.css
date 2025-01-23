@@ -1788,3 +1788,29 @@ ul.tabs-nav li.active {
     line-height: 45px;
     margin-bottom: 21px;
 }
+
+
+
+
+
+
+
+.h1 {
+    font-size: 104px;
+    font-weight: 800;
+    line-height: 111px;
+    letter-spacing: -3.64px;
+}
+
+.h2 {
+    font-size: 84px;
+    font-weight: 800;
+    line-height: 91px;
+    letter-spacing: -2.94px;
+}
+
+.para-xl {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+}

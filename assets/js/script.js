@@ -342,13 +342,19 @@ window.addEventListener("DOMContentLoaded", () => {
 gsap.set(".bnn-top h1 .word", {
     y: "100%",
 })
-gsap.set(".bnn-bc1 span, .bnn-bc1 p, .touch-block p, .touch-ico", {
+gsap.set(".bnn-top p, .bnn-bc1 span, .bnn-bc1 p, .touch-block p, .touch-ico", {
     y: "100",
     opacity: 0,
 })
 function entryAnim() {
     let entryTl = gsap.timeline()
-    entryTl.to(".bnn-top h1 .word", {
+    entryTl.to(".bnn-top p", {
+        y: 0,
+        opacity: 1,
+        stagger: 0.05,
+        delay: 0.2,
+    }, "s")
+    .to(".bnn-top h1 .word", {
         delay: 0.5,
         y: 0,
         stagger: 0.2,
