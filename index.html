@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -33,6 +34,156 @@
             </svg>
         </div>
     </div>
+
+
+
+    <form class="banner-form-holder opened" onsubmit="return OnSubmitQuote(event)">
+        <button type="button" class="close-side-form">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(243,131,19,1)">
+                <path
+                    d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                </path>
+            </svg>
+        </button>
+        <h3>Got A <span>Project?</span></h3>
+        <p>We'd love to hear about what you're looking for. Give us a few details below and we'll be in touch.</p>
+        <p class="choose-options-below">Choose your options below</p>
+        <div class="checkbox-holder">
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Mobile App" id="mobile-app">
+                <label for="mobile-app">Mobile App</label>
+            </div>
+
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="UIUX Design" id="uiux">
+                <label for="uiux">UIUX Design</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Web Development" id="website">
+                <label for="website">Web Development</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Custom Web</label>
+            </div>
+
+        </div>
+        <div class="checkbox-holder sub-radio serv-mobileapp">
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="React Native"
+                    id="mb-reactnative">
+                <label for="mb-reactnative">React Native</label>
+            </div>
+
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Flutter"
+                    id="mb-flutter">
+                <label for="mb-flutter">Flutter</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Swift" id="mb-swift">
+                <label for="mb-swift">Swift</label>
+            </div>
+        </div>
+        <div class="checkbox-holder sub-radio serv-uiux">
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Landing Page"
+                    id="uiux-landingpage">
+                <label for="uiux-landingpage">Landing Page</label>
+            </div>
+
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Dashboard"
+                    id="uiux-dashboard">
+                <label for="uiux-dashboard">Dashboard</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="eCommerce"
+                    id="uiux-ecommerce">
+                <label for="uiux-ecommerce">eCommerce</label>
+            </div>
+        </div>
+        <div class="checkbox-holder sub-radio serv-webdev">
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="PHP" id="webdev-php">
+                <label for="webdev-php">PHP</label>
+            </div>
+
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="React"
+                    id="webdev-react">
+                <label for="webdev-react">React</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Wordpress"
+                    id="webdev-wordpress">
+                <label for="webdev-wordpress">Wordpress</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Shopify"
+                    id="webdev-shopify">
+                <label for="webdev-shopify">Shopify</label>
+            </div>
+        </div>
+        <div class="checkbox-holder sub-radio serv-customweb">
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Custom Web Development"
+                    id="cusweb-webdev">
+                <label for="cusweb-webdev">Custom Web Development</label>
+            </div>
+        </div>
+
+
+        <div class="cus-fields-holder">
+            <div class="grid grid-cols-1 gap-4">
+                <div class="w-full">
+                    <div class="cus-field-box">
+                        <input type="text" id="fullname" required="" name="name" placeholder="">
+                        <label for="fullname">Full Name</label>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="cus-field-box">
+                        <input type="email" id="email" required="" name="email" placeholder="">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="cus-field-box">
+                        <input type="tel" id="phone" required="" name="phone" placeholder="">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                </div>
+
+                <div class="w-full">
+                    <div class="cus-field-box">
+                        <input type="text" id="project-info" required="" name="details" placeholder="">
+                        <label for="project-info">Tell Us Something About Your Project</label>
+                    </div>
+                </div>
+
+                <div class="w-full">
+                    <div class="form-submit-holder">
+                        <button type="submit" class="w-full">Submit Form</button>
+                    </div>
+                    <p class="keep-info">We'll keep your information in our CRM to respond to your request. For more
+                        details, consult our <a href="#"> privacy policy</a></p>
+                </div>
+
+                <div class="w-full">
+                    <div class="alertsuccess hidden">
+                        <span>Success! Form has been submitted</span>
+                    </div>
+
+                    <div class="alertfail hidden">
+                        <span>Success! Form has been submitted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+
+
 
     <header class="cus-site-header">
         <div class="container">
@@ -680,7 +831,7 @@
                         <p>Five-Star Reviews.</p>
                     </div>
                     <div class="stats-col2">
-                        <p>We’ve successfully completed over 300 projects across various industries. Our team of
+                        <p>We've successfully completed over 300 projects across various industries. Our team of
                             designers,
                             developers, and digital strategists work closely together, and we believe this collaboration
                             is
@@ -694,7 +845,7 @@
         <div class="container">
             <div class="skillset-row">
                 <div class="skillset-col1">
-                    <h2>We’re good at</h2>
+                    <h2>We're good at</h2>
                     <span>Services</span>
                     <ul class="svc-list">
                         <li><a href="#">E-Commerce</a></li>
@@ -817,7 +968,7 @@
                 <div class="git-col2">
                     <div class="git-cell">
                         <h3>Let's get started</h3>
-                        <p>We’d love to hear about your project.</p>
+                        <p>We'd love to hear about your project.</p>
                         <a href="#" class="site-btn">Get in Touch</a>
                     </div>
                 </div>
