@@ -73,8 +73,9 @@
 
 .banner-form-holder p {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
     opacity: 0;
+    font-weight: 700;
     transform: translateY(20px);
     transition: opacity 0.3s ease 0.1s, transform 0.3s ease 0.1s;
     margin-bottom: 20px;
