@@ -1721,3 +1721,96 @@ ul.tabs-nav li.active {
     line-height: 146%;
     letter-spacing: 0.36px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Case Study Pages */
+
+.case-study-banner {
+    width: 100%;
+    padding: 220px 0px 110px;
+}
+
+.csb-row {
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.csb-row .cs-c1 {
+    flex: 1;
+}
+
+.csb-row .bnn-bc2 {
+    flex: inherit;
+}
+
+.cs-c1 p {
+    color: #000;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 45px;
+    margin-bottom: 21px;
+}
+
+
+
+
+
+
+
+.h1 {
+    font-size: 104px;
+    font-weight: 800;
+    line-height: 111px;
+    letter-spacing: -3.64px;
+}
+
+.h2 {
+    font-size: 84px;
+    font-weight: 800;
+    line-height: 91px;
+    letter-spacing: -2.94px;
+}
+
+.para-xl {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+}
