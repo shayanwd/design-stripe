@@ -1814,3 +1814,59 @@ ul.tabs-nav li.active {
     font-weight: 400;
     line-height: 40px;
 }
+
+
+
+
+
+
+
+.prob-swiper {
+    overflow: visible;
+}
+
+section:has(.prob-swiper) {
+    overflow: hidden;
+}
+
+.prob-swiper .swiper-wrapper {
+    transition-timing-function: linear;
+    height: auto;
+    align-items: stretch;
+}
+
+.prob-swiper:has(.prob-slid-card) .swiper-slide {
+    width: 100%;
+    max-width: 473px;
+    height: auto;
+}
+
+.prob-slid-card {
+    background: #fff;
+    width: 100%;
+    padding: 35px 20px 39px;
+    border: 1px solid #BABABA;
+    border-radius: 16px;
+    height: 100%;
+    transition: all 0.3s;
+    color: #000;
+}
+
+.prob-slid-card h3 {
+    font-weight: 600;
+    color: currentColor;
+}
+
+.para-sm {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.prob-slid-card p {
+    color: currentColor;
+}
+
+.prob-slid-card:hover {
+    background: #000;
+    color: #fff;
+}
