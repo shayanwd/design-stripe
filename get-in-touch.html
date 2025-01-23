@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Angel | Design stripe</title>
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+
+    <header class="cus-site-header">
+        <div class="container">
+            <div class="header-content-holder">
+                <a href="/" class="head-logo">
+                    <img src="assets/images/DesignStrips.svg" alt="Logo">
+                </a>
+                <div class="header-right">
+                    <a href="#" class="book-call-btn site-btn">Get in Touch</a>
+                    <button class="menu-btn" type="button" id="menuBtn">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section class="py-[120px] bg-[#0B0B0B]">
+        <div class="container mx-auto">
+            <h2 class="h1 text-white text-center"> Related Case Studies </h2>
+
+            <!-- Swiper -->
+            <div class="swiper relatedCaseStudies mt-[140px]">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-01-min.png" alt="">
+                                <h4>Synchronised Quiz - App</h4>
+                                <p>App Design And Development | UIUX</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-02-min.png" alt="">
+                                <h4>AA Studios - Wesbite Design</h4>
+                                <p>Website Design and Development | UIUX</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-03-min.png" alt="">
+                                <h4>Mauve Originals - Clothing Brand</h4>
+                                <p>Website Design And Development | UIUX</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-04-min.png" alt="">
+                                <h4>Al Quran Al Kreem - App</h4>
+                                <p>App Design And Development | UIUX</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-05-min.png" alt="">
+                                <h4>Pleniage - E-Commerce Platform</h4>
+                                <p>Website Design and Development | UIUX</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-06-min.png" alt="">
+                                <h4>DHP - On Demand Application For Overseas Pakistani</h4>
+                                <p>App Design And Development | UIUX</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="py-[120px]">
+
+
+        <section class="cus-contact-holder">
+            <form class="container mx-auto" id="contactForm" onsubmit="return OnSubmitQuote(event)">
+                <div class="flex flex-wrap items-center">
+                    <div class="w-full md:w-1/2">
+                        <h2>Get in touch</h2>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <p>
+                            We'd love to hear about what you're looking for. Give us a few details below and we'll be in
+                            touch.
+                        </p>
+                    </div>
+                </div>
+
+                <h3>I'm looking for help with</h3>
+                <h4>Choose your options below</h4>
+
+
+                <div class="checkbox-holder">
+                    <div class="checkbox-item">
+                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Mobile App"
+                            id="mobile-app">
+                        <label for="Mobile App Development">Mobile App Development</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="UIUX Design" id="uiux">
+                        <label for="uiux">Flutter App Development</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Web Development"
+                            id="website">
+                        <label for="website">React Native App Development</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
+                            id="custom-web">
+                        <label for="custom-web">UIUX Design</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
+                            id="custom-web">
+                        <label for="custom-web">Website Development</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
+                            id="custom-web">
+                        <label for="custom-web">Custom Web Development</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
+                            id="custom-web">
+                        <label for="custom-web">Wordpress/ShopifyDevelopment</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
+                            id="custom-web">
+                        <label for="custom-web">Other</label>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                <h3>
+                    My contact details and some info about my project
+                </h3>
+
+                <div class="cus-fields-holder">
+                    <div class="flex flex-wrap">
+                        <div class="w-full md:w-1/2 lg:w-1/4 px-3">
+                            <div class="cus-field-box">
+                                <input type="text" id="fullname" required="" name="name" placeholder="">
+                                <label for="fullname">Full Name</label>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/4 px-3">
+                            <div class="cus-field-box">
+                                <input type="email" id="email" required="" name="email" placeholder="">
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/4 px-3">
+                            <div class="cus-field-box">
+                                <input type="tel" id="phone" required="" name="phone" placeholder="">
+                                <label for="phone">Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2 lg:w-1/4 px-3">
+                            <div class="cus-field-box">
+                                <input type="text" id="company" name="company" placeholder="">
+                                <label for="company">Company Name</label>
+                            </div>
+                        </div>
+                        <div class="w-full px-3">
+                            <div class="cus-field-box">
+                                <input type="text" id="project-info" required="" name="details" placeholder="">
+                                <label for="project-info">Tell Us Something About Your Project</label>
+                            </div>
+                        </div>
+
+                        <div class="flex justify-between mt-7 w-full items-center">
+                            <div class="w-full px-3 ">
+                                <div class="attachment-holder">
+                                    <h5>Attach any relevant document</h5>
+                                    <div class="file-upload-holder">
+                                        <input type="file" id="file-upload" name="fup"
+                                            accept=".pdf,.doc,.docx,.txt,.jpg,.png,.jpeg"
+                                            onchange="handleFileUpload(event)">
+                                        <label for="file-upload">Attach File</label>
+                                    </div>
+                                    <div id="file-preview" class="file-preview"></div>
+                                </div>
+                            </div>
+
+                            <div class="w-full px-3">
+                                <div class="form-submit-holder form-submit-btn">
+                                    <button type="submit">Submit Form</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="w-full px-3">
+                            <div class="alertsuccess hidden">
+                                <span>Success! Form has been submitted</span>
+                            </div>
+
+                            <div class="alertfail hidden">
+                                <span>Success! Form has been submitted</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+
+
+    </section>
+
+
+    <footer class="site-foot">
+        <div class="container">
+            <div class="foot-follow">
+                <div class="follow-col1">
+                    <h2>We take pride in creating unforgettable digital experiences, brands, and websites alongside
+                        people like you.</h2>
+                </div>
+                <div class="follow-col2">
+                    <div class="follow-bar">
+                        <span>Follow us</span>
+                        <ul class="socials">
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/foot-INSTA.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/foot-FACEBOOK.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/foot-W1.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-git">
+                <div class="git-col1">
+                    <span>Get in touch</span>
+                    <ul>
+                        <li><a href="#">(786) 527-2456</a></li>
+                        <li><a href="#">Info@designstrips.com</a></li>
+                        <li><a href="#">Maimi Florida 33179, United States</a></li>
+                    </ul>
+                </div>
+                <div class="git-col2">
+                    <div class="git-cell">
+                        <h3>Let's get started</h3>
+                        <p>We'd love to hear about your project.</p>
+                        <a href="#" class="site-btn">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-cr">
+                <div class="fcr-col1">
+                    <p><a href="#">© 2024 Designstrips</a> · All rights reserved.</p>
+                </div>
+                <div class="fcr-col2">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.relatedCaseStudies', {
+            // Optional parameters
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+
+            // Autoplay configuration
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+            },
+
+            // Smooth transition effect
+            speed: 800,
+            effect: 'slide',
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>
