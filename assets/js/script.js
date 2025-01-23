@@ -420,5 +420,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
+const slid = document.querySelectorAll(".prob-swiper")
+if (slid) {
+    slid.forEach((sliderrr) => {
+        var swiper = new Swiper(sliderrr, {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            rewind: true,
+            speed: 2500,
+            autoplay: {
+                delay: 0,
+            },
+            breakpoints: {
+                100: {
+                    spaceBetween: 15,
+                },
+                575: {
+                    spaceBetween: 15,
+                },
+                768: {
+                    spaceBetween: 20,
+                },
+                990: {
+                    spaceBetween: 30,
+                },
+            }
+        });
+    });
+}
 
