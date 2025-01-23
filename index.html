@@ -37,7 +37,7 @@
 
 
 
-    <form class="banner-form-holder opened" onsubmit="return OnSubmitQuote(event)" data-lenis-prevent>
+    <form class="banner-form-holder" onsubmit="return OnSubmitQuote(event)" data-lenis-prevent>
         <button type="button" class="close-side-form">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(243,131,19,1)">
                 <path
@@ -46,119 +46,79 @@
             </svg>
         </button>
         <h3>Got A <span>Project?</span></h3>
-        <p>We'd love to hear about what you're looking for. Give us a few details below and we'll be in touch.</p>
-        <p class="choose-options-below">Choose your options below</p>
+        <p class="mb-[20px]">We'd love to hear about what you're looking for. Give us a few details below and we'll be
+            in
+            touch.</p>
+        <p class="choose-options-below mb-[20px]">Choose your options below</p>
         <div class="checkbox-holder">
             <div class="checkbox-item">
                 <input type="radio" name="mainServiceNameHead" class="servicechk" value="Mobile App" id="mobile-app">
-                <label for="mobile-app">Mobile App</label>
+                <label for="Mobile App Development">Mobile App Development</label>
             </div>
 
             <div class="checkbox-item">
                 <input type="radio" name="mainServiceNameHead" class="servicechk" value="UIUX Design" id="uiux">
-                <label for="uiux">UIUX Design</label>
+                <label for="uiux">Flutter App Development</label>
             </div>
             <div class="checkbox-item">
                 <input type="radio" name="mainServiceNameHead" class="servicechk" value="Web Development" id="website">
-                <label for="website">Web Development</label>
+                <label for="website">React Native App Development</label>
             </div>
             <div class="checkbox-item">
                 <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
-                <label for="custom-web">Custom Web</label>
+                <label for="custom-web">UIUX Design</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Website Development</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Custom Web Development</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Wordpress/ShopifyDevelopment</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Other</label>
             </div>
 
         </div>
-        <div class="checkbox-holder sub-radio serv-mobileapp">
-            <div class="checkbox-item">
-                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="React Native"
-                    id="mb-reactnative">
-                <label for="mb-reactnative">React Native</label>
-            </div>
 
-            <div class="checkbox-item">
-                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Flutter"
-                    id="mb-flutter">
-                <label for="mb-flutter">Flutter</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Swift" id="mb-swift">
-                <label for="mb-swift">Swift</label>
-            </div>
-        </div>
-        <div class="checkbox-holder sub-radio serv-uiux">
-            <div class="checkbox-item">
-                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Landing Page"
-                    id="uiux-landingpage">
-                <label for="uiux-landingpage">Landing Page</label>
-            </div>
 
-            <div class="checkbox-item">
-                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Dashboard"
-                    id="uiux-dashboard">
-                <label for="uiux-dashboard">Dashboard</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="eCommerce"
-                    id="uiux-ecommerce">
-                <label for="uiux-ecommerce">eCommerce</label>
-            </div>
-        </div>
-        <div class="checkbox-holder sub-radio serv-webdev">
-            <div class="checkbox-item">
-                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="PHP" id="webdev-php">
-                <label for="webdev-php">PHP</label>
-            </div>
-
-            <div class="checkbox-item">
-                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="React"
-                    id="webdev-react">
-                <label for="webdev-react">React</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Wordpress"
-                    id="webdev-wordpress">
-                <label for="webdev-wordpress">Wordpress</label>
-            </div>
-            <div class="checkbox-item">
-                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Shopify"
-                    id="webdev-shopify">
-                <label for="webdev-shopify">Shopify</label>
-            </div>
-        </div>
-        <div class="checkbox-holder sub-radio serv-customweb">
-            <div class="checkbox-item">
-                <input type="radio" name="mainServiceInnerNameHeader" class="servicechk" value="Custom Web Development"
-                    id="cusweb-webdev">
-                <label for="cusweb-webdev">Custom Web Development</label>
-            </div>
-        </div>
 
 
         <div class="cus-fields-holder">
-            <div class="grid grid-cols-1 gap-4">
-                <div class="w-full">
-                    <div class="cus-field-box">
+            <div class="grid grid-cols-1 gap-4 mt-5">
+
+                <div class="flex  gap-4">
+                    <div class="cus-field-box max-w-[134px]">
                         <input type="text" id="fullname" required="" name="name" placeholder="">
                         <label for="fullname">Full Name</label>
                     </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="cus-field-box">
+                    <div class="cus-field-box max-w-[233px]">
                         <input type="email" id="email" required="" name="email" placeholder="">
                         <label for="email">Email Address</label>
                     </div>
-                    <div class="cus-field-box">
+                    <div class="cus-field-box max-w-[271px]">
                         <input type="tel" id="phone" required="" name="phone" placeholder="">
                         <label for="phone">Phone Number</label>
                     </div>
                 </div>
 
-                <div class="w-full">
-                    <div class="cus-field-box">
-                        <input type="text" id="project-info" required="" name="details" placeholder="">
-                        <label for="project-info">Tell Us Something About Your Project</label>
-                    </div>
+
+                <div class="cus-field-box max-w-[372px]">
+                    <input type="text" id="project-info" required="" name="details" placeholder="">
+                    <label for="project-info">Company Name</label>
                 </div>
+
+                <div class="cus-field-box">
+                    <input type="text" id="project-info" required="" name="details" placeholder="">
+                    <label for="project-info">TTell us about your project</label>
+                </div>
+
 
                 <div class="w-full">
                     <div class="form-submit-holder">
@@ -191,7 +151,7 @@
                     <img src="assets/images/DesignStrips.svg" alt="Logo">
                 </a>
                 <div class="header-right">
-                    <a href="#" class="book-call-btn site-btn">Get in Touch</a>
+                    <a href="#" class="book-call-btn site-btn open-form">Get in Touch</a>
                     <button class="menu-btn" type="button" id="menuBtn">
                         <span class="menu-line"></span>
                         <span class="menu-line"></span>
@@ -392,7 +352,7 @@
                     </ul>
                 </div>
 
-                <button type="button" class="get-in-touch-header site-btn">Get In Touch</button>
+                <button type="button" class="get-in-touch-header site-btn open-form">Get In Touch</button>
             </div>
         </div>
     </div>
@@ -897,7 +857,7 @@
                     <div class="git-cell">
                         <h3>Let's get started</h3>
                         <p>We'd love to hear about your project.</p>
-                        <a href="#" class="site-btn">Get in Touch</a>
+                        <a href="javascript:void(0)" class="site-btn open-form">Get in Touch</a>
                     </div>
                 </div>
             </div>
@@ -925,6 +885,8 @@
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="assets/js/script.js" defer></script>
+
+
 
 
 </body>

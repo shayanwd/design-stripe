@@ -383,6 +383,34 @@ if (storiesSec) {
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all buttons that should open the form
+    const getTouchBtns = document.querySelectorAll('.open-form');
+    const bannerForm = document.querySelector('.banner-form-holder');
+    const closeFormBtn = document.querySelector('.close-side-form');
+
+    // Add click handler for opening the form on each button
+    getTouchBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            bannerForm.classList.add('opened');
+        });
+    });
+
+    // Add click handler for closing the form
+    closeFormBtn.addEventListener('click', function () {
+        bannerForm.classList.remove('opened');
+    });
+
+    // Close form when clicking outside
+    document.addEventListener('click', function (event) {
+        if (bannerForm.classList.contains('opened') &&
+            !bannerForm.contains(event.target) &&
+            !Array.from(getTouchBtns).some(btn => btn.contains(event.target))) {
+            bannerForm.classList.remove('opened');
+        }
+    });
+});
+
 
 
 
