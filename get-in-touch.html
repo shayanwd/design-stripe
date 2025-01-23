@@ -46,7 +46,7 @@
 
 
 
-    <section class="py-[120px] bg-[#0B0B0B]">
+    <section class="related-case-sec py-[120px] bg-[#0B0B0B]">
         <div class="container mx-auto">
             <h2 class="h1 text-white text-center"> Related Case Studies </h2>
 
@@ -351,47 +351,25 @@
 
     <script>
         const swiper = new Swiper('.relatedCaseStudies', {
-            // Optional parameters
             slidesPerView: 3,
             spaceBetween: 30,
             loop: true,
-
-            // Autoplay configuration
             autoplay: {
                 delay: 3000,
                 disableOnInteraction: false,
                 pauseOnMouseEnter: true
             },
-
-            // Smooth transition effect
             speed: 800,
             effect: 'slide',
-
-            // Navigation arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            // Pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-
-            // Responsive breakpoints
             breakpoints: {
-                // when window width is >= 320px
                 320: {
                     slidesPerView: 1,
                     spaceBetween: 20
                 },
-                // when window width is >= 768px
                 768: {
                     slidesPerView: 2,
                     spaceBetween: 30
                 },
-                // when window width is >= 1024px
                 1024: {
                     slidesPerView: 3,
                     spaceBetween: 30

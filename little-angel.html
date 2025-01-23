@@ -35,6 +35,113 @@
         </div>
     </div>
 
+
+    <form class="banner-form-holder" onsubmit="return OnSubmitQuote(event)" data-lenis-prevent>
+        <button type="button" class="close-side-form">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(243,131,19,1)">
+                <path
+                    d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                </path>
+            </svg>
+        </button>
+        <h3>Got A <span>Project?</span></h3>
+        <p class="mb-[20px]">We'd love to hear about what you're looking for. Give us a few details below and we'll be
+            in
+            touch.</p>
+        <p class="choose-options-below mb-[20px]">Choose your options below</p>
+        <div class="checkbox-holder">
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Mobile App" id="mobile-app">
+                <label for="Mobile App Development">Mobile App Development</label>
+            </div>
+
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="UIUX Design" id="uiux">
+                <label for="uiux">Flutter App Development</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Web Development" id="website">
+                <label for="website">React Native App Development</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">UIUX Design</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Website Development</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Custom Web Development</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Wordpress/ShopifyDevelopment</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Other</label>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="cus-fields-holder">
+            <div class="grid grid-cols-1 gap-4 mt-5">
+
+                <div class="flex  gap-4">
+                    <div class="cus-field-box max-w-[134px]">
+                        <input type="text" id="fullname" required="" name="name" placeholder="">
+                        <label for="fullname">Full Name</label>
+                    </div>
+                    <div class="cus-field-box max-w-[233px]">
+                        <input type="email" id="email" required="" name="email" placeholder="">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="cus-field-box max-w-[271px]">
+                        <input type="tel" id="phone" required="" name="phone" placeholder="">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                </div>
+
+
+                <div class="cus-field-box max-w-[372px]">
+                    <input type="text" id="project-info" required="" name="details" placeholder="">
+                    <label for="project-info">Company Name</label>
+                </div>
+
+                <div class="cus-field-box">
+                    <input type="text" id="project-info" required="" name="details" placeholder="">
+                    <label for="project-info">TTell us about your project</label>
+                </div>
+
+
+                <div class="w-full">
+                    <div class="form-submit-holder">
+                        <button type="submit" class="w-full">Submit Form</button>
+                    </div>
+                    <p class="keep-info">We'll keep your information in our CRM to respond to your request. For more
+                        details, consult our <a href="#"> privacy policy</a></p>
+                </div>
+
+                <div class="w-full">
+                    <div class="alertsuccess hidden">
+                        <span>Success! Form has been submitted</span>
+                    </div>
+
+                    <div class="alertfail hidden">
+                        <span>Success! Form has been submitted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
     <header class="cus-site-header">
         <div class="container">
             <div class="header-content-holder">
@@ -721,435 +828,194 @@
             </div>
         </div>
     </section>
-    <div class="work-scroll-pinner">
-        <section class="work-sec work-scroll">
-            <div class="container">
-                <div class="work-scroll-traveller-wrap">
-                    <div class="work-scroll-traveller">
-                        <div class="work-row horizontal">
-                            <div class="work-col1">
-                                <h2>Work</h2>
-                                <p>A collection of our carefully crafted work, built from the ground up by our skilled
-                                    team.
-                                </p>
-                                <a href="#" class="site-btn">See All</a>
-                            </div>
-                            <div class="work-col2">
-                                <div class="work-card">
-                                    <a href="#">
-                                        <img src="assets/images/workcard-01-min.png" alt="">
-                                        <h4>Synchronised Quiz - App</h4>
-                                        <p>App Design And Development | UIUX</p>
-                                    </a>
-                                </div>
-                                <div class="work-card">
-                                    <a href="#">
-                                        <img src="assets/images/workcard-02-min.png" alt="">
-                                        <h4>AA Studios - Wesbite Design</h4>
-                                        <p>Website Design and Development | UIUX</p>
-                                    </a>
-                                </div>
-                                <div class="work-card">
-                                    <a href="#">
-                                        <img src="assets/images/workcard-03-min.png" alt="">
-                                        <h4>Mauve Originals - Clothing Brand</h4>
-                                        <p>Website Design And Development | UIUX</p>
-                                    </a>
-                                </div>
-                                <div class="work-card">
-                                    <a href="#">
-                                        <img src="assets/images/workcard-04-min.png" alt="">
-                                        <h4>Al Quran Al Kreem - App</h4>
-                                        <p>App Design And Development | UIUX</p>
-                                    </a>
-                                </div>
-                                <div class="work-card">
-                                    <a href="#">
-                                        <img src="assets/images/workcard-05-min.png" alt="">
-                                        <h4>Pleniage - E-Commerce Platform</h4>
-                                        <p>Website Design and Development | UIUX</p>
-                                    </a>
-                                </div>
-                                <div class="work-card">
-                                    <a href="#">
-                                        <img src="assets/images/workcard-06-min.png" alt="">
-                                        <h4>DHP - On Demand Application For Overseas Pakistani</h4>
-                                        <p>App Design And Development | UIUX</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="work-col3">
-                                <span>View More</span>
-                                <a href="#" class="site-btn">Case Studies</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <section class="love-sec">
-        <div class="container">
-            <span>What we love to do</span>
-            <div class="love-rows">
-                <div class="love-row">
-                    <div class="lt-col1">
-                        <h3>E-commerce</h3>
-                    </div>
-                    <div class="lt-col2">
-                        <div class="cs-list">
-                            <li>
-                                <a href="#">
-                                    <div class="csl-desc">
-                                        <span>Recently Complete Study</span>
-                                        <b>Plenaige</b>
-                                    </div>
-                                    <img src="assets/images/pleaniage-cs.png" alt="">
-                                    <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
-                                            fill="white" />
-                                        <path
-                                            d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
-                                            fill="white" />
-                                    </svg>
-
-                                </a>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-                <div class="love-row">
-                    <div class="lt-col1">
-                        <h3>Website Design</h3>
-                    </div>
-                    <div class="lt-col2">
-                        <div class="cs-list">
-                            <li>
-                                <a href="#">
-                                    <div class="csl-desc">
-                                        <span>Recently Complete Study</span>
-                                        <b>AA Studio</b>
-                                    </div>
-                                    <img src="assets/images/tab-aa.png" alt="">
-                                    <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
-                                            fill="white" />
-                                        <path
-                                            d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
-                                            fill="white" />
-                                    </svg>
-
-                                </a>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-                <div class="love-row">
-                    <div class="lt-col1">
-                        <h3>App Design</h3>
-                    </div>
-                    <div class="lt-col2">
-                        <div class="cs-list">
-                            <li>
-                                <a href="#">
-                                    <div class="csl-desc">
-                                        <span>Recently Complete Study</span>
-                                        <b>Synchronise</b>
-                                    </div>
-                                    <img src="assets/images/tab-sn.png" alt="">
-                                    <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
-                                            fill="white" />
-                                        <path
-                                            d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
-                                            fill="white" />
-                                    </svg>
-
-                                </a>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-                <div class="love-row">
-                    <div class="lt-col1">
-                        <h3>Brand Design</h3>
-                    </div>
-                    <div class="lt-col2">
-                        <div class="cs-list">
-                            <li>
-                                <a href="#">
-                                    <div class="csl-desc">
-                                        <span>Recently Complete Study</span>
-                                        <b>Mauve</b>
-                                    </div>
-                                    <img src="assets/images/tab-mv.png" alt="">
-                                    <svg width="69" height="69" viewBox="0 0 69 69" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M41.4865 54.1075C40.9402 54.1075 40.394 53.9062 39.9627 53.475C39.129 52.6412 39.129 51.2612 39.9627 50.4275L55.8902 34.5L39.9627 18.5725C39.129 17.7387 39.129 16.3587 39.9627 15.525C40.7965 14.6912 42.1765 14.6912 43.0102 15.525L60.4615 32.9762C61.2952 33.81 61.2952 35.19 60.4615 36.0237L43.0102 53.475C42.579 53.9062 42.0327 54.1075 41.4865 54.1075Z"
-                                            fill="white" />
-                                        <path
-                                            d="M58.4487 36.6562H10.0625C8.88375 36.6562 7.90625 35.6788 7.90625 34.5C7.90625 33.3213 8.88375 32.3438 10.0625 32.3438H58.4487C59.6275 32.3438 60.605 33.3213 60.605 34.5C60.605 35.6788 59.6275 36.6562 58.4487 36.6562Z"
-                                            fill="white" />
-                                    </svg>
-
-                                </a>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="love-brands">
-            <div class="swiper marquee-swiper">
+    <section class="related-case-sec py-[120px] bg-[#0B0B0B]">
+        <div class="container mx-auto">
+            <h2 class="h1 text-white text-center"> Related Case Studies </h2>
+            <!-- Swiper -->
+            <div class="swiper relatedCaseStudies mt-[140px]">
                 <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
                     <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-01.png" alt="">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-01-min.png" alt="">
+                                <h4>Synchronised Quiz - App</h4>
+                                <p>App Design And Development | UIUX</p>
+                            </a>
                         </div>
                     </div>
+                    <!-- Slide 2 -->
                     <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-02.png" alt="">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-02-min.png" alt="">
+                                <h4>AA Studios - Wesbite Design</h4>
+                                <p>Website Design and Development | UIUX</p>
+                            </a>
                         </div>
                     </div>
+                    <!-- Slide 3 -->
                     <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-03.png" alt="">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-03-min.png" alt="">
+                                <h4>Mauve Originals - Clothing Brand</h4>
+                                <p>Website Design And Development | UIUX</p>
+                            </a>
                         </div>
                     </div>
+                    <!-- Slide 4 -->
                     <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-04.png" alt="">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-04-min.png" alt="">
+                                <h4>Al Quran Al Kreem - App</h4>
+                                <p>App Design And Development | UIUX</p>
+                            </a>
                         </div>
                     </div>
+                    <!-- Slide 5 -->
                     <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-05.png" alt="">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-05-min.png" alt="">
+                                <h4>Pleniage - E-Commerce Platform</h4>
+                                <p>Website Design and Development | UIUX</p>
+                            </a>
                         </div>
                     </div>
+                    <!-- Slide 6 -->
                     <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-06.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-07.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-08.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-09.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-01.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-02.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-03.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-04.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-05.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-06.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-07.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-08.png" alt="">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="l-block">
-                            <img src="assets/images/mq-09.png" alt="">
+                        <div class="work-card">
+                            <a href="#">
+                                <img src="assets/images/workcard-06-min.png" alt="">
+                                <h4>DHP - On Demand Application For Overseas Pakistani</h4>
+                                <p>App Design And Development | UIUX</p>
+                            </a>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
-    <section class="project-sec">
-        <div class="container">
-            <div class="pr-box web">
-                <div class="pr-box-cntn">
-                    <h1>Digital Collaborations</h1>
-                    <p>Our expertise helps transform ideas into reality,
-                        crafting brands, websites, and digital products
-                        that deliver measurable success.</p>
+    <section class="cus-contact-holder">
+        <form class="container mx-auto" id="contactForm" onsubmit="return OnSubmitQuote(event)">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full md:w-1/2">
+                    <h2>Get in touch</h2>
                 </div>
-
-                <div class="pr-img">
-                    <video src="./assets/videos/modile-render.mp4" autoplay muted loop></video>
+                <div class="w-full md:w-1/2">
+                    <p>We'd love to hear about what you're looking for. Give us a few details below and we'll be in
+                        touch.</p>
                 </div>
             </div>
-
-            <div class="pr-box app">
-                <div class="pr-img">
-                    <video src="./assets/videos/web-render.mp4" autoplay muted loop></video>
+            <h3>I'm looking for help with</h3>
+            <h4>Choose your options below</h4>
+            <div class="checkbox-holder">
+                <div class="checkbox-item">
+                    <input type="radio" name="mainServiceNameHead" class="servicechk" value="Mobile App"
+                        id="mobile-app">
+                    <label for="Mobile App Development">Mobile App Development</label>
                 </div>
-
-                <div class="pr-box-cntn">
-                    <div class="no-box-area">
-                        <h4>07</h4>
-                        <span>Years on the market</span>
-                    </div>
-                    <div class="border"></div>
-                    <div class="no-box-area">
-                        <h4>250+</h4>
-                        <span>Satisfied customers</span>
-                    </div>
+                <div class="checkbox-item">
+                    <input type="radio" name="mainServiceNameHead" class="servicechk" value="UIUX Design" id="uiux">
+                    <label for="uiux">Flutter App Development</label>
                 </div>
-            </div>
-            <h3 class="additional-content">
-                From emerging startups to global enterprises, we collaborate with leading businesses and industry
-                pioneers.
-            </h3>
-        </div>
-    </section>
-    <section class="stats-sec">
-        <div class="container">
-            <div class="traveller">
-                <h2>Expand Your Digital Footprint</h2>
-            </div>
-            <div class="stats-container">
-                <div class="stats-title">
-                    <h3>Allow our experienced team to elevate your digital aspirations.</h3>
+                <div class="checkbox-item">
+                    <input type="radio" name="mainServiceNameHead" class="servicechk" value="Web Development"
+                        id="website">
+                    <label for="website">React Native App Development</label>
                 </div>
-                <div class="stats-row">
-                    <div class="stats-col1">
-                        <span>250+</span>
-                        <p>Five-Star Reviews.</p>
-                    </div>
-                    <div class="stats-col2">
-                        <p>We've successfully completed over 300 projects across various industries. Our team of
-                            designers,
-                            developers, and digital strategists work closely together, and we believe this collaboration
-                            is
-                            the key to creating impactful digital products.</p>
-                    </div>
+                <div class="checkbox-item">
+                    <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
+                        id="custom-web">
+                    <label for="custom-web">UIUX Design</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
+                        id="custom-web">
+                    <label for="custom-web">Website Development</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
+                        id="custom-web">
+                    <label for="custom-web">Custom Web Development</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
+                        id="custom-web">
+                    <label for="custom-web">Wordpress/ShopifyDevelopment</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
+                        id="custom-web">
+                    <label for="custom-web">Other</label>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="skillset-sec">
-        <div class="container">
-            <div class="skillset-row">
-                <div class="skillset-col1">
-                    <h2>We're good at</h2>
-                    <span>Services</span>
-                    <ul class="svc-list">
-                        <li><a href="#">E-Commerce</a></li>
-                        <li><a href="#">Website Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">App Design</a></li>
-                        <li><a href="#">Brand Identities</a></li>
-                    </ul>
-                </div>
-                <div class="skillset-col2">
-                    <div class="book-cell">
-                        <h3>Book a 20min Free strategy call</h3>
-                        <p>Design talks are free though. And Now
-                            is the best time!</p>
-                        <div class="book-ctas">
-                            <a href="#" class="site-btn">Book a call with Alex</a>
-                            <a href="tel:7865272456" class="site-btn">(786) 527-2456</a>
+            <h3>My contact details and some info about my project</h3>
+            <div class="cus-fields-holder">
+                <div class="flex flex-wrap">
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3">
+                        <div class="cus-field-box">
+                            <input type="text" id="fullname" required="" name="name" placeholder="">
+                            <label for="fullname">Full Name</label>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3">
+                        <div class="cus-field-box">
+                            <input type="email" id="email" required="" name="email" placeholder="">
+                            <label for="email">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3">
+                        <div class="cus-field-box">
+                            <input type="tel" id="phone" required="" name="phone" placeholder="">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 lg:w-1/4 px-3">
+                        <div class="cus-field-box">
+                            <input type="text" id="company" name="company" placeholder="">
+                            <label for="company">Company Name</label>
+                        </div>
+                    </div>
+                    <div class="w-full px-3">
+                        <div class="cus-field-box">
+                            <input type="text" id="project-info" required="" name="details" placeholder="">
+                            <label for="project-info">Tell Us Something About Your Project</label>
+                        </div>
+                    </div>
+                    <div class="flex justify-between mt-7 w-full items-center">
+                        <div class="w-full px-3 ">
+                            <div class="attachment-holder">
+                                <h5>Attach any relevant document</h5>
+                                <div class="file-upload-holder">
+                                    <input type="file" id="file-upload" name="fup"
+                                        accept=".pdf,.doc,.docx,.txt,.jpg,.png,.jpeg"
+                                        onchange="handleFileUpload(event)">
+                                    <label for="file-upload">Attach File</label>
+                                </div>
+                                <div id="file-preview" class="file-preview"></div>
+                            </div>
+                        </div>
+                        <div class="w-full px-3">
+                            <div class="form-submit-holder form-submit-btn">
+                                <button type="submit">Submit Form</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full px-3">
+                        <div class="alertsuccess hidden">
+                            <span>Success! Form has been submitted</span>
+                        </div>
+                        <div class="alertfail hidden">
+                            <span>Success! Form has been submitted</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="stories-sec">
-        <div class="container">
-            <div class="story-top">
-                <h2>Client Stories</h2>
-                <div class="scroll-indi">
-                    <span class="circ"></span>
-                    <p>Keep Scrolling</p>
-                </div>
-            </div>
-            <div class="revs-holder">
-                <div class="scroll-progress">
-                    <div class="progress"></div>
-                </div>
-                <div class="rev-card">
-                    <div class="rev-desc">
-                        <p>Mauve Originals is delighted to have partnered with Pixcile Technologies & DesignStrips for
-                            our website
-                            design and Shopify development needs. Their expertise in social media management and SEO
-                            significantly enhanced our online presence. We are extremely pleased with the results and
-                            highly recommend their services for anyone seeking quality digital solutions.</p>
-                    </div>
-                    <div class="rev-info">
-                        <img src="assets/images/rvc-1.png" alt="">
-                        <span>Mauve Originals</span>
-                    </div>
-                </div>
-                <div class="rev-card">
-                    <div class="rev-desc">
-                        <p>Skintastic successfully collaborated with Pixcile Technologies & DesignStrips to create a
-                            visually stunning
-                            and highly functional website on the Shopify platform. Their expertise in social media
-                            marketing and search engine optimization significantly enhanced our online presence. We are
-                            extremely satisfied with the outcome and confidently recommend Pixcile Technologies &
-                            DesignStrips for
-                            their exceptional services.</p>
-                    </div>
-                    <div class="rev-info">
-                        <img src="assets/images/rvc-2.png" alt="">
-                        <span>Skintastic</span>
-                    </div>
-                </div>
-                <div class="rev-card">
-                    <div class="rev-desc">
-                        <p>Pak Suzuki partnered with Pixcile Technologies & DesignStrips for exceptional UI/UX design
-                            and portal
-                            development. Their seamless application integration has greatly enhanced our operational
-                            efficiency. We appreciate their professionalism and collaborative approach, which made the
-                            entire process smooth and enjoyable.We highly recommend their services.</p>
-                    </div>
-                    <div class="rev-info">
-                        <img src="assets/images/rvc-3.png" alt="">
-                        <span>Suzuki</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </form>
     </section>
     <footer class="site-foot">
         <div class="container">

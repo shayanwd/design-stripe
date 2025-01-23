@@ -411,14 +411,13 @@ label {
 
 .cus-contact-holder {
     padding: 80px 0;
-    background-color: #000;
+    background-color: #0B0B0B;
 }
 
 .cus-contact-holder h2 {
     font-size: 55px;
     color: white;
     margin-bottom: 0;
-    font-family: 'Archivo Expanded';
 }
 
 
@@ -426,8 +425,6 @@ label {
     font-size: 18px;
     color: white;
     margin-bottom: 0;
-    font-family: 'Archivo Expanded';
-
 }
 
 .cus-contact-holder h3 {
@@ -435,13 +432,11 @@ label {
     color: white;
     margin-top: 60px;
     font-weight: 600;
-    font-family: 'Archivo Expanded';
 }
 
 .cus-contact-holder h4 {
     font-size: 16px;
     color: white;
-    font-family: 'Archivo Expanded';
     margin-top: 20px;
 }
 

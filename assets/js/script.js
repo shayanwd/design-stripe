@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-const textElement = document.querySelectorAll('.spplit');
+const textElement = document.querySelectorAll('.spplit, .h1, h2');
 textElement.forEach((textElem) => {
     const split = new SplitType(textElem, {
         types: 'lines, words, chars',
@@ -473,3 +473,60 @@ var swiper = new Swiper(".challenge-swiper", {
         },
     }
 });
+
+
+
+
+var swiper = new Swiper('.relatedCaseStudies', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+    },
+    speed: 800,
+    effect: 'slide',
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    }
+});
+
+
+
+
+
+
+function textEffect() {
+
+    let headingzz = document.querySelectorAll(".h1, .h2")
+    headingzz.forEach((heading)=>{
+        gsap.set(heading.querySelectorAll(".char"),{
+            y: "120%",
+        })
+        
+        gsap.to(heading.querySelectorAll(".char"), {
+            scrollTrigger:{
+                trigger: heading,
+                start:"bottom bottom",
+            },
+            y: 0,
+            stagger: 0.02,
+        })
+    })
+
+}
+
+textEffect();

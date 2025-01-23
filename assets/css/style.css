@@ -1936,3 +1936,38 @@ section:has(.prob-swiper) {
     font-size: 18px;
     line-height: 35px;
 }
+
+
+
+
+
+
+
+.cus-contact-holder+.site-foot {
+    background: #0B0B0B;
+}
+
+.cus-contact-holder+.site-foot :is(.follow-col1 h2, .git-col1>span, .git-col1 ul li a, .git-cell h3, .git-cell p) {
+    color: #fff;
+}
+
+.cus-contact-holder+.site-foot .follow-bar {
+    background: #fff;
+}
+
+.cus-contact-holder+.site-foot .follow-bar>span {
+    color: #000;
+}
+
+.cus-contact-holder+.site-foot .follow-bar ul {
+    filter: invert(1);
+}
+
+.cus-contact-holder+.site-foot {
+    border-top: 1px solid #fff;
+    padding-top: 53px;
+}
+
+:is(.h1, .h2) .line {
+    overflow: hidden;
+}
