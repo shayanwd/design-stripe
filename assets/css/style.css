@@ -1,3 +1,17 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #545CFF;
+    border-radius: 20px;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -1375,7 +1389,19 @@ ul.tabs-nav li.active {
     width: 41px;
     height: 41px;
     border: 1px solid #6C6C6C;
+    border-right-color: #000;
     border-radius: 50%;
+    animation: ghoomo 1s linear infinite;
+}
+
+@keyframes ghoomo {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
 }
 
 .scroll-indi p {
@@ -1391,6 +1417,31 @@ ul.tabs-nav li.active {
     flex-direction: column;
     min-height: 100vh;
     gap: 80px;
+    position: relative;
+    overflow-y: clip;
+}
+
+.revs-holder .scroll-progress {
+    width: 7px;
+    height: 200px;
+    background: #ffffff26;
+    position: sticky;
+    top: 40%;
+    margin-left: auto;
+    margin-bottom: -280px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.revs-holder .progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    border-radius: 20px;
+    transform-origin: top;
+    background: #545CFF;
 }
 
 .rev-card {

@@ -726,12 +726,15 @@
                     <span class="circ"></span>
                     <p>Keep Scrolling</p>
                 </div>
-                <div class="scroll-progress"></div>
             </div>
             <div class="revs-holder">
+                <div class="scroll-progress">
+                    <div class="progress"></div>
+                </div>
                 <div class="rev-card">
                     <div class="rev-desc">
-                        <p>Mauve Originals is delighted to have partnered with Pixcile Technologies for our website
+                        <p>Mauve Originals is delighted to have partnered with Pixcile Technologies & DesignStrips for
+                            our website
                             design and Shopify development needs. Their expertise in social media management and SEO
                             significantly enhanced our online presence. We are extremely pleased with the results and
                             highly recommend their services for anyone seeking quality digital solutions.</p>
@@ -743,10 +746,12 @@
                 </div>
                 <div class="rev-card">
                     <div class="rev-desc">
-                        <p>Skintastic successfully collaborated with Pixcile Technologies to create a visually stunning
+                        <p>Skintastic successfully collaborated with Pixcile Technologies & DesignStrips to create a
+                            visually stunning
                             and highly functional website on the Shopify platform. Their expertise in social media
                             marketing and search engine optimization significantly enhanced our online presence. We are
-                            extremely satisfied with the outcome and confidently recommend Pixcile Technologies for
+                            extremely satisfied with the outcome and confidently recommend Pixcile Technologies &
+                            DesignStrips for
                             their exceptional services.</p>
                     </div>
                     <div class="rev-info">
@@ -756,7 +761,8 @@
                 </div>
                 <div class="rev-card">
                     <div class="rev-desc">
-                        <p>Pak Suzuki partnered with Pixcile Technologies for exceptional UI/UX design and portal
+                        <p>Pak Suzuki partnered with Pixcile Technologies & DesignStrips for exceptional UI/UX design
+                            and portal
                             development. Their seamless application integration has greatly enhanced our operational
                             efficiency. We appreciate their professionalism and collaborative approach, which made the
                             entire process smooth and enjoyable.We highly recommend their services.</p>
@@ -951,6 +957,19 @@
                 entryAnim()
             }, 900);
         })
+
+        const storiesSec = document.querySelector(".stories-sec")
+        if (storiesSec) {
+            gsap.to(".progress", {
+                scrollTrigger: {
+                    trigger: ".revs-holder",
+                    start: "top 50%",
+                    end: "bottom 100%",
+                    scrub: true,
+                },
+                height: "100%",
+            })
+        }
 
     </script>
 </body>
