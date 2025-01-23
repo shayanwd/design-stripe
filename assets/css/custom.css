@@ -198,7 +198,7 @@
 
 .attachment-holder h5 {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     margin: 0;
 }
@@ -219,15 +219,15 @@
 
 .file-upload-holder label {
     display: inline-block;
-    background-color: #191919;
-    color: #F38313;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #545CFF;
     font-size: 12px;
-    padding: 15px 40px;
+    padding: 8px 29px;
     border-radius: 25px;
     margin: 0 !important;
     text-align: center;
     cursor: pointer !important;
-
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -406,4 +406,62 @@ label {
 .close-side-form svg {
     width: 100%;
     fill: #ffffff;
+}
+
+
+.cus-contact-holder {
+    padding: 80px 0;
+    background-color: #000;
+}
+
+.cus-contact-holder h2 {
+    font-size: 55px;
+    color: white;
+    margin-bottom: 0;
+    font-family: 'Archivo Expanded';
+}
+
+
+.cus-contact-holder p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 0;
+    font-family: 'Archivo Expanded';
+
+}
+
+.cus-contact-holder h3 {
+    font-size: 24px;
+    color: white;
+    margin-top: 60px;
+    font-weight: 600;
+    font-family: 'Archivo Expanded';
+}
+
+.cus-contact-holder h4 {
+    font-size: 16px;
+    color: white;
+    font-family: 'Archivo Expanded';
+    margin-top: 20px;
+}
+
+.form-submit-holder.form-submit-btn {
+    margin: 0;
+}
+
+.form-submit-holder.form-submit-btn button {
+    max-width: 270px;
+    width: 100%;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.relatedCaseStudies .work-card h4 {
+    color: white !important;
+    text-align: center;
+}
+
+.relatedCaseStudies .work-card p {
+    color: white !important;
+    text-align: center;
 }
