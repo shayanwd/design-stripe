@@ -257,6 +257,131 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+const textElement = document.querySelectorAll('.spplit');
+textElement.forEach((textElem) => {
+    const split = new SplitType(textElem, {
+        types: 'lines, words, chars',
+    });
+})
+
+var swiper = new Swiper(".work-swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    speed: 800,
+    autoplay: {
+        delay: 3000,
+    },
+});
+
+var swiper = new Swiper(".marquee-swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 100,
+    loop: true,
+    speed: 3500,
+    allowTouchMove: false,
+    noSwiping: true,
+    noSwipingClass: ".marquee-swiper",
+    autoplay: {
+        delay: 0,
+    },
+});
+
+
+const storySec = document.querySelector(".stories-sec")
+if (storySec) {
+    storySec.querySelectorAll(".rev-card").forEach((card, i) => {
+        card.style.setProperty('--scrollpos', `${i * 15}px`);
+    });
+}
+
+const traveller = document.querySelector(".traveller")
+if (traveller) {
+    const travellerWidht = traveller.getBoundingClientRect().width
+    const headingWidth = traveller.querySelector("h2").getBoundingClientRect().width
+    const finalWidth = travellerWidht - headingWidth
+    gsap.to(traveller.querySelector("h2"), {
+        scrollTrigger: {
+            start: "top 15%",
+            end: "end -100%",
+            trigger: ".stats-sec",
+            pin: true,
+            scrub: 1,
+        },
+        x: finalWidth,
+    })
+}
+
+const wrokScrollSec = document.querySelector(".work-scroll")
+if (wrokScrollSec) {
+    const wstravellerWidht = document.querySelector(".work-scroll-traveller-wrap").getBoundingClientRect().width
+    const wsTravelInnerWidth = wrokScrollSec.querySelector(".work-scroll-traveller").getBoundingClientRect().width
+    const finalWidth = wstravellerWidht - wsTravelInnerWidth
+    gsap.to(wrokScrollSec.querySelector(".work-scroll-traveller"), {
+        scrollTrigger: {
+            start: "top top",
+            end: "end -250%",
+            trigger: wrokScrollSec,
+            scrub: 1,
+        },
+        x: finalWidth,
+    })
+}
+
+
+
+
+
+const screenLoader = document.querySelector(".screen-loader")
+window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        screenLoader.classList.add("loaded")
+    }, 800);
+})
+
+gsap.set(".bnn-top h1 .word", {
+    y: "100%",
+})
+gsap.set(".bnn-bc1 span, .bnn-bc1 p, .touch-block p, .touch-ico", {
+    y: "100",
+    opacity: 0,
+})
+function entryAnim() {
+    let entryTl = gsap.timeline()
+    entryTl.to(".bnn-top h1 .word", {
+        delay: 0.5,
+        y: 0,
+        stagger: 0.2,
+    }, "s")
+        .to(".bnn-bc1 span, .bnn-bc1 p, .touch-block p, .touch-ico", {
+            y: 0,
+            opacity: 1,
+            stagger: 0.05,
+            delay: 1.2,
+        }, "s")
+}
+window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        entryAnim()
+    }, 900);
+})
+
+const storiesSec = document.querySelector(".stories-sec")
+if (storiesSec) {
+    gsap.to(".progress", {
+        scrollTrigger: {
+            trigger: ".revs-holder",
+            start: "top 50%",
+            end: "bottom 100%",
+            scrub: true,
+        },
+        height: "100%",
+    })
+}
+
+
+
+
 
 
 
