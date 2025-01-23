@@ -398,3 +398,23 @@ label {
     color: white;
     margin-top: 20px;
 }
+
+
+.close-side-form {
+    all: unset;
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #292929;
+    padding: 5px;
+    box-sizing: border-box !important;
+}
+
+.close-side-form svg {
+    width: 100%;
+}
