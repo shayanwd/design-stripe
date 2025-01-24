@@ -1,0 +1,150 @@
+@media (max-width: 990px) {
+
+    .h2 {
+        font-size: 64px;
+        line-height: 70px;
+    }
+
+    .para-xl {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .h1 {
+        font-size: 84px;
+        line-height: 100px;
+    }
+
+    .bnn-top h1 {
+        font-size: 84px;
+        line-height: 100px;
+    }
+
+    .foot-follow {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+
+    .foot-git {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .git-cell {
+        padding: 20px 20px 30px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .h2 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .para-xl {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .h1 {
+        font-size: 64px;
+        line-height: 70px;
+    }
+
+    .bnn-top h1 {
+        font-size: 64px;
+        line-height: 70px;
+    }
+
+    .bnn-top.csb-row {
+        flex-direction: column;
+        align-items: inherit;
+        justify-content: inherit;
+    }
+
+    .case-study-banner {
+        width: 100%;
+        padding: 140px 0px 40px;
+    }
+
+    .cus-contact-holder {
+        padding: 40px 0;
+    }
+
+
+}
+
+
+@media (max-width: 580px) {
+    .h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .book-call-btn.site-btn.open-form {
+        display: none;
+    }
+
+    .attachment-holder {
+        flex-direction: column;
+        align-items: inherit;
+    }
+
+    .cus-contact-holder h2 {
+        font-size: 32px;
+
+    }
+
+    .follow-col1 h2 {
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .para-xl {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .para-md {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .para-sm {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .bnn-top h1 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .cs-c1 p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 18px;
+    }
+
+    .ob-slid-card {
+
+        padding: 20px 15px 20px;
+    }
+
+    .checkbox-item label {
+        padding: 6px 14px;
+
+        font-size: 12px;
+    }
+
+
+}

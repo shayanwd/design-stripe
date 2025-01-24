@@ -12,371 +12,514 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
 
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            font-family: "Open Sans";
+        }
 
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            font-size: 20px;
+        }
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
-    <script src="https://cdn.tailwindcss.com"></script>
+        canvas {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            border: 2px solid white;
+        }
+    </style>
 </head>
 
 <body>
 
 
-    <header class="cus-site-header">
-        <div class="container">
-            <div class="header-content-holder">
-                <a href="/" class="head-logo">
-                    <img src="assets/images/DesignStrips.svg" alt="Logo">
-                </a>
-                <div class="header-right">
-                    <a href="#" class="book-call-btn site-btn">Get in Touch</a>
-                    <button class="menu-btn" type="button" id="menuBtn">
-                        <span class="menu-line"></span>
-                        <span class="menu-line"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </header>
+
+
+    <h1>Click and drag!</h1>
+    <canvas id="c"></canvas>
 
 
 
-
-    <section class="related-case-sec py-[120px] bg-[#0B0B0B]">
-        <div class="container mx-auto">
-            <h2 class="h1 text-white text-center"> Related Case Studies </h2>
-
-            <!-- Swiper -->
-            <div class="swiper relatedCaseStudies mt-[140px]">
-                <div class="swiper-wrapper">
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="work-card">
-                            <a href="#">
-                                <img src="assets/images/workcard-01-min.png" alt="">
-                                <h4>Synchronised Quiz - App</h4>
-                                <p>App Design And Development | UIUX</p>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <div class="work-card">
-                            <a href="#">
-                                <img src="assets/images/workcard-02-min.png" alt="">
-                                <h4>AA Studios - Wesbite Design</h4>
-                                <p>Website Design and Development | UIUX</p>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <div class="work-card">
-                            <a href="#">
-                                <img src="assets/images/workcard-03-min.png" alt="">
-                                <h4>Mauve Originals - Clothing Brand</h4>
-                                <p>Website Design And Development | UIUX</p>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide">
-                        <div class="work-card">
-                            <a href="#">
-                                <img src="assets/images/workcard-04-min.png" alt="">
-                                <h4>Al Quran Al Kreem - App</h4>
-                                <p>App Design And Development | UIUX</p>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="swiper-slide">
-                        <div class="work-card">
-                            <a href="#">
-                                <img src="assets/images/workcard-05-min.png" alt="">
-                                <h4>Pleniage - E-Commerce Platform</h4>
-                                <p>Website Design and Development | UIUX</p>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Slide 6 -->
-                    <div class="swiper-slide">
-                        <div class="work-card">
-                            <a href="#">
-                                <img src="assets/images/workcard-06-min.png" alt="">
-                                <h4>DHP - On Demand Application For Overseas Pakistani</h4>
-                                <p>App Design And Development | UIUX</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-    <section class="py-[120px]">
-
-
-        <section class="cus-contact-holder">
-            <form class="container mx-auto" id="contactForm" onsubmit="return OnSubmitQuote(event)">
-                <div class="flex flex-wrap items-center">
-                    <div class="w-full md:w-1/2">
-                        <h2>Get in touch</h2>
-                    </div>
-                    <div class="w-full md:w-1/2">
-                        <p>
-                            We'd love to hear about what you're looking for. Give us a few details below and we'll be in
-                            touch.
-                        </p>
-                    </div>
-                </div>
-
-                <h3>I'm looking for help with</h3>
-                <h4>Choose your options below</h4>
-
-
-                <div class="checkbox-holder">
-                    <div class="checkbox-item">
-                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Mobile App"
-                            id="mobile-app">
-                        <label for="Mobile App Development">Mobile App Development</label>
-                    </div>
-
-                    <div class="checkbox-item">
-                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="UIUX Design" id="uiux">
-                        <label for="uiux">Flutter App Development</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Web Development"
-                            id="website">
-                        <label for="website">React Native App Development</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
-                            id="custom-web">
-                        <label for="custom-web">UIUX Design</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
-                            id="custom-web">
-                        <label for="custom-web">Website Development</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
-                            id="custom-web">
-                        <label for="custom-web">Custom Web Development</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
-                            id="custom-web">
-                        <label for="custom-web">Wordpress/ShopifyDevelopment</label>
-                    </div>
-                    <div class="checkbox-item">
-                        <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web"
-                            id="custom-web">
-                        <label for="custom-web">Other</label>
-                    </div>
-
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-                <h3>
-                    My contact details and some info about my project
-                </h3>
-
-                <div class="cus-fields-holder">
-                    <div class="flex flex-wrap">
-                        <div class="w-full md:w-1/2 lg:w-1/4 px-3">
-                            <div class="cus-field-box">
-                                <input type="text" id="fullname" required="" name="name" placeholder="">
-                                <label for="fullname">Full Name</label>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-1/2 lg:w-1/4 px-3">
-                            <div class="cus-field-box">
-                                <input type="email" id="email" required="" name="email" placeholder="">
-                                <label for="email">Email Address</label>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-1/2 lg:w-1/4 px-3">
-                            <div class="cus-field-box">
-                                <input type="tel" id="phone" required="" name="phone" placeholder="">
-                                <label for="phone">Phone Number</label>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-1/2 lg:w-1/4 px-3">
-                            <div class="cus-field-box">
-                                <input type="text" id="company" name="company" placeholder="">
-                                <label for="company">Company Name</label>
-                            </div>
-                        </div>
-                        <div class="w-full px-3">
-                            <div class="cus-field-box">
-                                <input type="text" id="project-info" required="" name="details" placeholder="">
-                                <label for="project-info">Tell Us Something About Your Project</label>
-                            </div>
-                        </div>
-
-                        <div class="flex justify-between mt-7 w-full items-center">
-                            <div class="w-full px-3 ">
-                                <div class="attachment-holder">
-                                    <h5>Attach any relevant document</h5>
-                                    <div class="file-upload-holder">
-                                        <input type="file" id="file-upload" name="fup"
-                                            accept=".pdf,.doc,.docx,.txt,.jpg,.png,.jpeg"
-                                            onchange="handleFileUpload(event)">
-                                        <label for="file-upload">Attach File</label>
-                                    </div>
-                                    <div id="file-preview" class="file-preview"></div>
-                                </div>
-                            </div>
-
-                            <div class="w-full px-3">
-                                <div class="form-submit-holder form-submit-btn">
-                                    <button type="submit">Submit Form</button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="w-full px-3">
-                            <div class="alertsuccess hidden">
-                                <span>Success! Form has been submitted</span>
-                            </div>
-
-                            <div class="alertfail hidden">
-                                <span>Success! Form has been submitted</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </form>
-        </section>
-
-
-    </section>
-
-
-    <footer class="site-foot">
-        <div class="container">
-            <div class="foot-follow">
-                <div class="follow-col1">
-                    <h2>We take pride in creating unforgettable digital experiences, brands, and websites alongside
-                        people like you.</h2>
-                </div>
-                <div class="follow-col2">
-                    <div class="follow-bar">
-                        <span>Follow us</span>
-                        <ul class="socials">
-                            <li>
-                                <a href="http://" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/foot-INSTA.svg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/foot-FACEBOOK.svg" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://" target="_blank" rel="noopener noreferrer">
-                                    <img src="assets/images/foot-W1.svg" alt="">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="foot-git">
-                <div class="git-col1">
-                    <span>Get in touch</span>
-                    <ul>
-                        <li><a href="#">(786) 527-2456</a></li>
-                        <li><a href="#">Info@designstrips.com</a></li>
-                        <li><a href="#">Maimi Florida 33179, United States</a></li>
-                    </ul>
-                </div>
-                <div class="git-col2">
-                    <div class="git-cell">
-                        <h3>Let's get started</h3>
-                        <p>We'd love to hear about your project.</p>
-                        <a href="#" class="site-btn">Get in Touch</a>
-                    </div>
-                </div>
-            </div>
-            <div class="foot-cr">
-                <div class="fcr-col1">
-                    <p><a href="#">© 2024 Designstrips</a> · All rights reserved.</p>
-                </div>
-                <div class="fcr-col2">
-                    <ul>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms & Condition</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script>
-        const swiper = new Swiper('.relatedCaseStudies', {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: true
-            },
-            speed: 800,
-            effect: 'slide',
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 20
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
+
+
+        (function (w) {
+
+            var canvas, ctx;
+
+
+            var mouse = {
+                x: 0,
+                y: 0,
+                px: 0,
+                py: 0,
+                down: false
+            };
+
+
+            var canvas_width = 500; //Needs to be a multiple of the resolution value below.
+            var canvas_height = 500; //This too.
+
+            var resolution = 10; //Width and height of each cell in the grid.
+
+            var pen_size = 40; //Radius around the mouse cursor coordinates to reach when stirring
+
+            var num_cols = canvas_width / resolution; //This value is the number of columns in the grid.
+            var num_rows = canvas_height / resolution; //This is number of rows.
+            var speck_count = 5000; //This determines how many particles will be made.
+
+            var vec_cells = []; //The array that will contain the grid cells
+            var particles = []; //The array that will contain the particles
+
+
+
+            function init() {
+
+                //These lines get the canvas DOM element and canvas context, respectively.
+                canvas = document.getElementById("c");
+                ctx = canvas.getContext("2d");
+
+                //These two set the width and height of the canvas to the defined values.
+                canvas.width = canvas_width;
+                canvas.height = canvas_height;
+
+
+                for (i = 0; i < speck_count; i++) {
+
+                    particles.push(new particle(Math.random() * canvas_width, Math.random() * canvas_height));
+                }
+
+                //This loops through the count of columns.
+                for (col = 0; col < num_cols; col++) {
+
+                    //This defines the array element as another array.
+                    vec_cells[col] = [];
+
+                    //This loops through the count of rows.
+                    for (row = 0; row < num_rows; row++) {
+
+
+                        var cell_data = new cell(col * resolution, row * resolution, resolution)
+
+                        //This pushes the cell object into the grid array.
+                        vec_cells[col][row] = cell_data;
+
+
+                        vec_cells[col][row].col = col;
+                        vec_cells[col][row].row = row;
+
+                    }
+                }
+
+
+                for (col = 0; col < num_cols; col++) {
+
+                    for (row = 0; row < num_rows; row++) {
+
+
+                        var cell_data = vec_cells[col][row];
+
+
+                        var row_up = (row - 1 >= 0) ? row - 1 : num_rows - 1;
+                        var col_left = (col - 1 >= 0) ? col - 1 : num_cols - 1;
+                        var col_right = (col + 1 < num_cols) ? col + 1 : 0;
+
+                        //Get the reference to the cell on the row above.
+                        var up = vec_cells[col][row_up];
+                        var left = vec_cells[col_left][row];
+                        var up_left = vec_cells[col_left][row_up];
+                        var up_right = vec_cells[col_right][row_up];
+
+
+                        cell_data.up = up;
+                        cell_data.left = left;
+                        cell_data.up_left = up_left;
+                        cell_data.up_right = up_right;
+
+
+                        up.down = vec_cells[col][row];
+                        left.right = vec_cells[col][row];
+                        up_left.down_right = vec_cells[col][row];
+                        up_right.down_left = vec_cells[col][row];
+
+                    }
+                }
+
+                w.addEventListener("mousedown", mouse_down_handler);
+                w.addEventListener("touchstart", touch_start_handler);
+
+                w.addEventListener("mouseup", mouse_up_handler);
+                w.addEventListener("touchend", touch_end_handler);
+
+                canvas.addEventListener("mousemove", mouse_move_handler);
+                canvas.addEventListener("touchmove", touch_move_handler);
+
+                //When the page is finished loading, run the draw() function.
+                w.onload = draw;
+
+            }
+
+
+            function update_particle() {
+
+                //Loops through all of the particles in the array
+                for (i = 0; i < particles.length; i++) {
+
+                    var p = particles[i];
+
+                    //If the particle's X and Y coordinates are within the bounds of the canvas...
+                    if (p.x >= 0 && p.x < canvas_width && p.y >= 0 && p.y < canvas_height) {
+
+
+                        var col = parseInt(p.x / resolution);
+                        var row = parseInt(p.y / resolution);
+
+                        //Same as above, store reference to cell
+                        var cell_data = vec_cells[col][row];
+
+
+                        var ax = (p.x % resolution) / resolution;
+                        var ay = (p.y % resolution) / resolution;
+
+
+                        p.xv += (1 - ax) * cell_data.xv * 0.05;
+                        p.yv += (1 - ay) * cell_data.yv * 0.05;
+
+
+                        p.xv += ax * cell_data.right.xv * 0.05;
+                        p.yv += ax * cell_data.right.yv * 0.05;
+
+                        p.xv += ay * cell_data.down.xv * 0.05;
+                        p.yv += ay * cell_data.down.yv * 0.05;
+
+
+                        p.x += p.xv;
+                        p.y += p.yv;
+
+
+                        var dx = p.px - p.x;
+                        var dy = p.py - p.y;
+
+                        //Using the Pythagorean theorum (A^2 + B^2 = C^2), this determines the distance the particle travelled.
+                        var dist = Math.sqrt(dx * dx + dy * dy);
+
+                        //This line generates a random value between 0 and 0.5
+                        var limit = Math.random() * 0.5;
+
+                        //If the distance the particle has travelled this frame is greater than the random value...
+                        if (dist > limit) {
+                            ctx.lineWidth = 1;
+                            ctx.beginPath(); //Begin a new path on the canvas
+                            ctx.moveTo(p.x, p.y); //Move the drawing cursor to the starting point
+                            ctx.lineTo(p.px, p.py); //Describe a line from the particle's old coordinates to the new ones
+                            ctx.stroke(); //Draw the path to the canvas
+                        } else {
+                            //If the particle hasn't moved further than the random limit...
+
+                            ctx.beginPath();
+                            ctx.moveTo(p.x, p.y);
+
+
+                            ctx.lineTo(p.x + limit, p.y + limit);
+
+                            ctx.stroke();
+                        }
+
+                        //This updates the previous X and Y coordinates of the particle to the new ones for the next loop.
+                        p.px = p.x;
+                        p.py = p.y;
+                    }
+                    else {
+                        //If the particle's X and Y coordinates are outside the bounds of the canvas...
+
+                        //Place the particle at a random location on the canvas
+                        p.x = p.px = Math.random() * canvas_width;
+                        p.y = p.py = Math.random() * canvas_height;
+
+                        //Set the particles velocity to zero.
+                        p.xv = 0;
+                        p.yv = 0;
+                    }
+
+                    //These lines divide the particle's velocity in half everytime it loops, slowing them over time.
+                    p.xv *= 0.5;
+                    p.yv *= 0.5;
                 }
             }
-        });
+
+            function draw() {
+
+                var mouse_xv = mouse.x - mouse.px;
+                var mouse_yv = mouse.y - mouse.py;
+
+                //Loops through all of the columns
+                for (i = 0; i < vec_cells.length; i++) {
+                    var cell_datas = vec_cells[i];
+
+                    //Loops through all of the rows
+                    for (j = 0; j < cell_datas.length; j++) {
+
+                        //References the current cell
+                        var cell_data = cell_datas[j];
+
+                        //If the mouse button is down, updates the cell velocity using the mouse velocity
+                        if (mouse.down) {
+                            change_cell_velocity(cell_data, mouse_xv, mouse_yv, pen_size);
+                        }
+
+                        //This updates the pressure values for the cell.
+                        update_pressure(cell_data);
+                    }
+                }
+
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                //This sets the color to draw with.
+                ctx.strokeStyle = "#00FFFF";
+
+                //This calls the function to update the particle positions.
+                update_particle();
+
+
+                for (i = 0; i < vec_cells.length; i++) {
+                    var cell_datas = vec_cells[i];
+
+                    for (j = 0; j < cell_datas.length; j++) {
+                        var cell_data = cell_datas[j];
+
+                        update_velocity(cell_data);
+
+                    }
+                }
+
+                //This replaces the previous mouse coordinates values with the current ones for the next frame.
+                mouse.px = mouse.x;
+                mouse.py = mouse.y;
+
+                //This requests the next animation frame which runs the draw() function again.
+                requestAnimationFrame(draw);
+
+            }
+
+
+            function change_cell_velocity(cell_data, mvelX, mvelY, pen_size) {
+                //This gets the distance between the cell and the mouse cursor.
+                var dx = cell_data.x - mouse.x;
+                var dy = cell_data.y - mouse.y;
+                var dist = Math.sqrt(dy * dy + dx * dx);
+
+                //If the distance is less than the radius...
+                if (dist < pen_size) {
+
+                    //If the distance is very small, set it to the pen_size.
+                    if (dist < 4) {
+                        dist = pen_size;
+                    }
+
+                    //Calculate the magnitude of the mouse's effect (closer is stronger)
+                    var power = pen_size / dist;
+
+                    /*
+                    Apply the velocity to the cell by multiplying the power by the mouse velocity and adding it to the cell velocity
+                    */
+                    cell_data.xv += mvelX * power;
+                    cell_data.yv += mvelY * power;
+                }
+            }
+
+            function update_pressure(cell_data) {
+
+                //This calculates the collective pressure on the X axis by summing the surrounding velocities
+                var pressure_x = (
+                    cell_data.up_left.xv * 0.5 //Divided in half because it's diagonal
+                    + cell_data.left.xv
+                    + cell_data.down_left.xv * 0.5 //Same
+                    - cell_data.up_right.xv * 0.5 //Same
+                    - cell_data.right.xv
+                    - cell_data.down_right.xv * 0.5 //Same
+                );
+
+                //This does the same for the Y axis.
+                var pressure_y = (
+                    cell_data.up_left.yv * 0.5
+                    + cell_data.up.yv
+                    + cell_data.up_right.yv * 0.5
+                    - cell_data.down_left.yv * 0.5
+                    - cell_data.down.yv
+                    - cell_data.down_right.yv * 0.5
+                );
+
+                //This sets the cell pressure to one-fourth the sum of both axis pressure.
+                cell_data.pressure = (pressure_x + pressure_y) * 0.25;
+            }
+
+
+            /*
+            This function updates the velocity value for an individual cell using the 
+            velocities of neighboring cells.
+            */
+            function update_velocity(cell_data) {
+
+                cell_data.xv += (
+                    cell_data.up_left.pressure * 0.5
+                    + cell_data.left.pressure
+                    + cell_data.down_left.pressure * 0.5
+                    - cell_data.up_right.pressure * 0.5
+                    - cell_data.right.pressure
+                    - cell_data.down_right.pressure * 0.5
+                ) * 0.25;
+
+                //This does the same for the Y axis.
+                cell_data.yv += (
+                    cell_data.up_left.pressure * 0.5
+                    + cell_data.up.pressure
+                    + cell_data.up_right.pressure * 0.5
+                    - cell_data.down_left.pressure * 0.5
+                    - cell_data.down.pressure
+                    - cell_data.down_right.pressure * 0.5
+                ) * 0.25;
+
+                /*
+                This slowly decreases the cell's velocity over time so that the fluid stops
+                if it's left alone.
+                */
+                cell_data.xv *= 0.99;
+                cell_data.yv *= 0.99;
+            }
+
+
+            //This function is used to create a cell object.
+            function cell(x, y, res) {
+
+                //This stores the position to place the cell on the canvas
+                this.x = x;
+                this.y = y;
+
+                //This is the width and height of the cell
+                this.r = res;
+
+                //These are the attributes that will hold the row and column values
+                this.col = 0;
+                this.row = 0;
+
+                //This stores the cell's velocity
+                this.xv = 0;
+                this.yv = 0;
+
+                //This is the pressure attribute
+                this.pressure = 0;
+
+            }
+
+
+            //This function is used to create a particle object.
+            function particle(x, y) {
+                this.x = this.px = x;
+                this.y = this.py = y;
+                this.xv = this.yv = 0;
+            }
+
+
+            /*
+            This function is called whenever the mouse button is pressed. The event object is passed to 
+            this function when it's called.
+            */
+            function mouse_down_handler(e) {
+                e.preventDefault(); //Prevents the default action from happening (e.g. navigation)
+                mouse.down = true; //Sets the mouse object's "down" value to true
+            }
+
+
+            //This function is called whenever the mouse button is released.    
+            function mouse_up_handler() {
+                mouse.down = false;
+            }
+
+
+            //This function is called whenever a touch is registered.
+            function touch_start_handler(e) {
+                e.preventDefault(); //Prevents the default action from happening (e.g. navigation)
+                var rect = canvas.getBoundingClientRect();
+                mouse.x = mouse.px = e.touches[0].pageX - rect.left; //Set both previous and current coordinates
+                mouse.y = mouse.py = e.touches[0].pageY - rect.top;
+                mouse.down = true; //Sets the mouse object's "down" value to true
+            }
+
+            //This function is called whenever a touch point is removed from the screen.
+            function touch_end_handler(e) {
+                if (!e.touches) mouse.down = false; //If there are no more touches on the screen, sets "down" to false.
+            }
+
+
+            /*
+            This function is called whenever the mouse coordinates have changed. The coordinates are checked by the 
+            browser at intervals.
+            */
+            function mouse_move_handler(e) {
+                e.preventDefault(); //Prevents the default action from happening
+                //Saves the previous coordinates
+                mouse.px = mouse.x;
+                mouse.py = mouse.y;
+
+                //Sets the new coordinates
+                mouse.x = e.offsetX || e.layerX;
+                mouse.y = e.offsetY || e.layerY;
+            }
+
+
+            /*
+            This function is called whenever one of the coordinates have changed. The coordinates are checked by the 
+            browser at intervals.
+            */
+            function touch_move_handler(e) {
+                e.preventDefault(); //Prevents the default action from happening
+                mouse.px = mouse.x;
+                mouse.py = mouse.y;
+
+                //This line gets the coordinates for where the canvas is positioned on the screen.
+                var rect = canvas.getBoundingClientRect();
+
+                /*
+                And this sets the mouse coordinates to where the first touch is. Since we're using pageX
+                and pageY, we need to subtract the top and left offset of the canvas so the values are correct.
+                */
+                mouse.x = e.touches[0].pageX - rect.left;
+                mouse.y = e.touches[0].pageY - rect.top;
+            }
+
+
+            /*
+            And this line attaches an object called "Fluid" to the global scope. "window" was passed into
+            the self-invoking function as "w", so setting "w.Fluid" adds it to "window".
+            */
+            w.Fluid = {
+                initialize: init
+            }
+
+        }(window)); //Passes "window" into the self-invoking function.
+
+
+        /*
+        Request animation frame polyfill. This enables you to use "requestAnimationFrame" 
+        regardless of the browser the script is running in.
+        */
+        window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
+
+
+        //And this line calls the init() function defined above to start the script.
+        Fluid.initialize();
+
     </script>
+
 
 </body>
 

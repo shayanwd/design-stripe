@@ -15,7 +15,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
     border: none;
     outline: none;
     text-decoration: none;
@@ -1969,5 +1969,9 @@ section:has(.prob-swiper) {
 }
 
 :is(.h1, .h2) .line {
+    overflow: hidden;
+}
+
+.challenges-sec {
     overflow: hidden;
 }
