@@ -1809,6 +1809,13 @@ ul.tabs-nav li.active {
     letter-spacing: -2.94px;
 }
 
+.h4 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 75.6px;
+    letter-spacing: -0.06em;
+}
+
 .para-xl {
     font-size: 22px;
     line-height: 40px;
