@@ -461,3 +461,24 @@ label {
     color: white !important;
     text-align: center;
 }
+
+.portfolio-sec .work-card {
+    width: 100%;
+}
+
+.portfolio-sec .work-card a p {
+    color: white !important;
+    text-align: center !important;
+}
+
+.portfolio-sec .work-card a h4 {
+    color: white !important;
+    text-align: center !important;
+    margin-top: 44px;
+}
+
+
+.site-btn.invert-btn {
+    background-color: #545CFF;
+    color: white;
+}
