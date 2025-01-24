@@ -381,54 +381,54 @@
 
             <div class="work-tab-holder">
                 <div class="flex items-center gap-[20px] mb-[60px]">
-                    <button type="button"
-                        class="text-white text-[12px] bg-[#545CFF] px-[40px] py-[10px] rounded-[50px]">ALL</button>
-                    <button type="button"
-                        class="text-white text-[12px] bg-transparent border border-[#545CFF] px-[40px] py-[10px] rounded-[50px]">WEBSITE
+                    <button type="button" data-filter="all"
+                        class="filter-btn active text-white text-[12px] bg-[#545CFF] px-[40px] py-[10px] rounded-[50px]">ALL</button>
+                    <button type="button" data-filter="website"
+                        class="filter-btn text-white text-[12px] bg-transparent border border-[#545CFF] px-[40px] py-[10px] rounded-[50px]">WEBSITE
                         DEVELOPMENT</button>
-                    <button type="button"
-                        class="text-white text-[12px] bg-transparent border border-[#545CFF] px-[40px] py-[10px] rounded-[50px]">APP
+                    <button type="button" data-filter="app"
+                        class="filter-btn text-white text-[12px] bg-transparent border border-[#545CFF] px-[40px] py-[10px] rounded-[50px]">APP
                         DEVELOPMENT</button>
                 </div>
             </div>
 
-            <div class="grid grid-cols-2 max-w-[1000px] mx-auto gap-x-[30px] gap-y-[120px]">
-                <div class="work-card">
+            <div class="grid grid-cols-2 max-w-[1000px] mx-auto gap-x-[30px] gap-y-[120px]" id="work-cards-container">
+                <div class="work-card" data-category="app">
                     <a href="#">
                         <img src="assets/images/workcard-01-min.png" alt="">
                         <h4>Synchronised Quiz - App</h4>
                         <p>App Design And Development | UIUX</p>
                     </a>
                 </div>
-                <div class="work-card">
+                <div class="work-card" data-category="website">
                     <a href="#">
                         <img src="assets/images/workcard-02-min.png" alt="">
                         <h4>AA Studios - Wesbite Design</h4>
                         <p>Website Design and Development | UIUX</p>
                     </a>
                 </div>
-                <div class="work-card">
+                <div class="work-card" data-category="app">
                     <a href="#">
                         <img src="assets/images/workcard-03-min.png" alt="">
                         <h4>Mauve Originals - Clothing Brand</h4>
                         <p>Website Design And Development | UIUX</p>
                     </a>
                 </div>
-                <div class="work-card">
+                <div class="work-card" data-category="website">
                     <a href="#">
                         <img src="assets/images/workcard-04-min.png" alt="">
                         <h4>Al Quran Al Kreem - App</h4>
                         <p>App Design And Development | UIUX</p>
                     </a>
                 </div>
-                <div class="work-card">
+                <div class="work-card" data-category="website">
                     <a href="#">
                         <img src="assets/images/workcard-05-min.png" alt="">
                         <h4>Pleniage - E-Commerce Platform</h4>
                         <p>Website Design and Development | UIUX</p>
                     </a>
                 </div>
-                <div class="work-card">
+                <div class="work-card" data-category="app">
                     <a href="#">
                         <img src="assets/images/workcard-06-min.png" alt="">
                         <h4>DHP - On Demand Application For Overseas Pakistani</h4>
@@ -443,10 +443,100 @@
                 <h4 class="h4 text-white">Want to see<br />
                     more?</h4>
 
-                <button type="button" class="site-btn invert-btn open-form">View all Case study</button>
+                <button type="button" class="site-btn invert-btn" id="viewAllBtn">View all Case study</button>
 
             </div>
 
+
+        </div>
+    </section>
+
+    <section class=" pt-[100px]">
+        <div class="container">
+            <h4 class="h4 text-black text-center">Clients Voices</h4>
+
+
+            <div class="swiper prob-swiper-no-ap mt-[40px]">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="client-voice-box">
+                            <h5>E-Commerce Solutions</h5>
+                            <h6>We develop E-Commerce sites that boost conversion,
+                                fuel growth and deliver impactful results. We don't do cookie-cutter solutions, only a
+                                bespoke
+                                strategy for your specific challenges and goals, without compromises on creativity or
+                                performance.</h6>
+                            <div class="flex items-center gap-[10px]">
+                                <img src="https://picsum.photos/200/300" alt="" />
+                                <p>Skintastic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-voice-box">
+                            <h5>Mobile App Development</h5>
+                            <h6>Our team creates intuitive and engaging mobile applications that provide real value to
+                                users.
+                                We focus on delivering seamless experiences across all platforms while ensuring optimal
+                                performance and user satisfaction.</h6>
+                            <div class="flex items-center gap-[10px]">
+                                <img src="https://picsum.photos/200/300" alt="" />
+                                <p>AppTech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-voice-box">
+                            <h5>Web Development</h5>
+                            <h6>We craft responsive and dynamic websites that not only look great but also perform
+                                exceptionally. Our solutions are tailored to meet specific business needs while ensuring
+                                scalability and maintainability.</h6>
+                            <div class="flex items-center gap-[10px]">
+                                <img src="https://picsum.photos/200/300" alt="" />
+                                <p>WebCraft Pro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="grid grid-cols-3 gap-[30px] mt-[60px]">
+                <div class="client-voice-box">
+                    <h5>E-Commerce Solutions</h5>
+                    <h6>We develop E-Commerce sites that boost conversion,
+                        fuel growth and deliver impactful results. We don't do cookie-cutter solutions, only a bespoke
+                        strategy for your specific challenges and goals, without compromises on creativity or
+                        performance.</h6>
+                    <div class="flex items-center gap-[10px]">
+                        <img src="https://picsum.photos/200/300" alt="" />
+                        <p>Skintastic</p>
+                    </div>
+                </div>
+
+                <div class="client-voice-box">
+                    <h5>E-Commerce Solutions</h5>
+                    <h6>We develop E-Commerce sites that boost conversion,
+                        fuel growth and deliver impactful results. We don't do cookie-cutter solutions, only a bespoke
+                        strategy for your specific challenges and goals, without compromises on creativity or
+                        performance.</h6>
+                    <div class="flex items-center gap-[10px]">
+                        <img src="https://picsum.photos/200/300" alt="" />
+                        <p>Skintastic</p>
+                    </div>
+                </div>
+
+                <div class="client-voice-box">
+                    <h5>E-Commerce Solutions</h5>
+                    <h6>We develop E-Commerce sites that boost conversion,
+                        fuel growth and deliver impactful results. We don't do cookie-cutter solutions, only a bespoke
+                        strategy for your specific challenges and goals, without compromises on creativity or
+                        performance.</h6>
+                    <div class="flex items-center gap-[10px]">
+                        <img src="https://picsum.photos/200/300" alt="" />
+                        <p>Skintastic</p>
+                    </div>
+                </div>
+            </div> -->
 
         </div>
     </section>
@@ -522,6 +612,63 @@
     <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.getElementById('work-cards-container');
+            const cards = container.getElementsByClassName('work-card');
+            const filterBtns = document.getElementsByClassName('filter-btn');
+            const viewAllBtn = document.getElementById('viewAllBtn');
+            let showingAll = false;
+
+            // Initially show only first 2 cards
+            function initializeCards() {
+                Array.from(cards).forEach((card, index) => {
+                    card.style.display = index < 2 ? 'block' : 'none';
+                });
+            }
+
+            // Filter cards based on category
+            function filterCards(category) {
+                Array.from(cards).forEach((card, index) => {
+                    const shouldShow = (category === 'all' || card.dataset.category === category);
+                    card.style.display = shouldShow && (showingAll || index < 2) ? 'block' : 'none';
+                });
+            }
+
+            // Handle filter button clicks
+            Array.from(filterBtns).forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Update active state
+                    Array.from(filterBtns).forEach(b => {
+                        b.classList.remove('active');
+                        b.classList.remove('bg-[#545CFF]');
+                        b.classList.add('bg-transparent');
+                        b.classList.add('border');
+                    });
+                    this.classList.add('active');
+                    this.classList.add('bg-[#545CFF]');
+                    this.classList.remove('bg-transparent');
+                    this.classList.remove('border');
+
+                    // Filter cards
+                    filterCards(this.dataset.filter);
+                });
+            });
+
+            // Handle View All button click
+            viewAllBtn.addEventListener('click', function () {
+                showingAll = !showingAll;
+                this.textContent = showingAll ? 'Show Less' : 'View all Case study';
+
+                const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+                filterCards(activeFilter);
+            });
+
+            // Initialize the view
+            initializeCards();
+        });
+    </script>
 
 </body>
 
