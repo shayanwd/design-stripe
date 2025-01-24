@@ -1840,6 +1840,26 @@ section:has(.prob-swiper) {
     height: auto;
 }
 
+.prob-swiper-no-ap {
+    overflow: visible;
+}
+
+section:has(.prob-swiper-no-ap) {
+    overflow: hidden;
+}
+
+.prob-swiper-no-ap .swiper-wrapper {
+    transition-timing-function: linear;
+    height: auto;
+    align-items: stretch;
+}
+
+.prob-swiper-no-ap:has(.prob-slid-card) .swiper-slide {
+    width: 100%;
+    max-width: 473px;
+    height: auto;
+}
+
 .prob-slid-card {
     background: #fff;
     width: 100%;

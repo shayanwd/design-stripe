@@ -448,6 +448,30 @@ if (slid) {
         });
     });
 }
+const slidNoAp = document.querySelectorAll(".prob-swiper-no-ap")
+if (slidNoAp) {
+    slidNoAp.forEach((sliderrr) => {
+        var swiper = new Swiper(sliderrr, {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            rewind: true,
+            breakpoints: {
+                100: {
+                    spaceBetween: 15,
+                },
+                575: {
+                    spaceBetween: 15,
+                },
+                768: {
+                    spaceBetween: 20,
+                },
+                990: {
+                    spaceBetween: 30,
+                },
+            }
+        });
+    });
+}
 
 
 var swiper = new Swiper(".challenge-swiper", {
