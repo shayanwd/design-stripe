@@ -274,18 +274,26 @@ var swiper = new Swiper(".work-swiper", {
     },
 });
 
-var swiper = new Swiper(".marquee-swiper", {
-    slidesPerView: "auto",
-    spaceBetween: 100,
-    loop: true,
-    speed: 3500,
-    allowTouchMove: false,
-    noSwiping: true,
-    noSwipingClass: ".marquee-swiper",
-    autoplay: {
-        delay: 0,
-    },
+
+const marquees = document.querySelectorAll(".marquee-swiper");
+marquees.forEach((marquee) => {
+    const isReversed = marquee.classList.contains("reversed");
+
+    new Swiper(marquee, {
+        slidesPerView: "auto",
+        spaceBetween: 40,
+        loop: true,
+        speed: 3500,
+        allowTouchMove: false,
+        noSwiping: true,
+        noSwipingClass: ".marquee-swiper",
+        autoplay: {
+            delay: 0,
+            reverseDirection: isReversed,
+        },
+    });
 });
+
 
 
 const storySec = document.querySelector(".stories-sec")
