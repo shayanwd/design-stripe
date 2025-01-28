@@ -461,3 +461,90 @@ label {
     color: white !important;
     text-align: center;
 }
+
+.portfolio-sec .work-card {
+    width: 100%;
+}
+
+.portfolio-sec .work-card a p {
+    color: white !important;
+    text-align: center !important;
+}
+
+.portfolio-sec .work-card a h4 {
+    color: white !important;
+    text-align: center !important;
+    margin-top: 44px;
+}
+
+
+.site-btn.invert-btn {
+    background-color: #545CFF;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 30px !important;
+}
+
+.work-card {
+    transition: all 0.3s ease-in-out;
+    animation: cardFadeIn 0.6s ease-in-out forwards;
+}
+
+@keyframes cardFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.client-voice-box {
+    border: 1.5px solid #545CFF;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+.client-voice-box h5 {
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.client-voice-box h6 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+
+.client-voice-box p {
+    font-size: 16px;
+    color: #6C6C6C;
+}
+
+.client-voice-box img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.swiper-slide:has(.client-voice-box) {
+    max-width: 560px;
+    width: 100%;
+    height: auto;
+}
+
+.swiper-wraper:has(.client-voice-box) {
+    height: auto;
+}
+
+.client-voice-box {
+    height: 100%;
+}

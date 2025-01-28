@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies</title>
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="screen-loader" lenis-scroll-prevent>
+        <div class="screen-ico">
+            <svg xmlns="http://www.w3.org/2000/svg" width="188" height="34" viewBox="0 0 188 34" fill="none">
+                <path
+                    d="M0.244 26V0.669998H8.506C11.2487 0.669998 13.6287 1.214 15.646 2.302C17.6633 3.39 19.2273 4.886 20.338 6.79C21.4487 8.694 22.004 10.87 22.004 13.318C22.004 15.766 21.4487 17.9533 20.338 19.88C19.2273 21.784 17.6633 23.28 15.646 24.368C13.6287 25.456 11.2487 26 8.506 26H0.244ZM5.514 21.41H8.642C10.2967 21.41 11.7247 21.0813 12.926 20.424C14.1273 19.744 15.0567 18.8033 15.714 17.602C16.394 16.378 16.734 14.95 16.734 13.318C16.734 11.6633 16.394 10.2353 15.714 9.034C15.0567 7.83267 14.1273 6.90333 12.926 6.246C11.7247 5.58867 10.2967 5.26 8.642 5.26H5.514V21.41ZM31.9068 26.408C29.9348 26.408 28.2234 25.9773 26.7728 25.116C25.3221 24.232 24.2001 23.0533 23.4068 21.58C22.6134 20.1067 22.2168 18.4747 22.2168 16.684C22.2168 14.8253 22.6248 13.1707 23.4408 11.72C24.2794 10.2693 25.4014 9.12467 26.8068 8.286C28.2121 7.44733 29.7988 7.028 31.5668 7.028C33.0401 7.028 34.3434 7.266 35.4768 7.742C36.6101 8.19533 37.5621 8.84133 38.3328 9.68C39.1261 10.5187 39.7268 11.4933 40.1348 12.604C40.5428 13.692 40.7468 14.882 40.7468 16.174C40.7468 16.5367 40.7241 16.8993 40.6788 17.262C40.6561 17.602 40.5994 17.8967 40.5088 18.146H26.6028V14.406H37.6188L35.2048 16.174C35.4314 15.1993 35.4201 14.338 35.1708 13.59C34.9214 12.8193 34.4794 12.2187 33.8448 11.788C33.2328 11.3347 32.4734 11.108 31.5668 11.108C30.6828 11.108 29.9234 11.3233 29.2888 11.754C28.6541 12.1847 28.1781 12.8193 27.8608 13.658C27.5434 14.4967 27.4188 15.5167 27.4868 16.718C27.3961 17.7607 27.5208 18.6787 27.8608 19.472C28.2008 20.2653 28.7221 20.8887 29.4248 21.342C30.1274 21.7727 30.9774 21.988 31.9748 21.988C32.8814 21.988 33.6521 21.8067 34.2868 21.444C34.9441 21.0813 35.4541 20.5827 35.8168 19.948L39.8968 21.886C39.5341 22.7927 38.9561 23.586 38.1628 24.266C37.3921 24.946 36.4741 25.4787 35.4088 25.864C34.3434 26.2267 33.1761 26.408 31.9068 26.408ZM48.9859 26.408C46.9459 26.408 45.1666 25.932 43.6479 24.98C42.1519 24.0053 41.1319 22.702 40.5879 21.07L44.3279 19.302C44.8039 20.2993 45.4499 21.0813 46.2659 21.648C47.0819 22.2147 47.9886 22.498 48.9859 22.498C49.7113 22.498 50.2666 22.3507 50.6519 22.056C51.0373 21.7613 51.2299 21.3533 51.2299 20.832C51.2299 20.56 51.1619 20.3333 51.0259 20.152C50.8899 19.948 50.6859 19.7667 50.4139 19.608C50.1419 19.4493 49.8019 19.3133 49.3939 19.2L46.2319 18.316C44.7133 17.8853 43.5459 17.194 42.7299 16.242C41.9139 15.2673 41.5059 14.1227 41.5059 12.808C41.5059 11.652 41.8006 10.6433 42.3899 9.782C42.9793 8.92067 43.8066 8.252 44.8719 7.776C45.9373 7.27733 47.1613 7.028 48.5439 7.028C50.3573 7.028 51.9439 7.45867 53.3039 8.32C54.6866 9.15867 55.6613 10.3487 56.2279 11.89L52.4539 13.658C52.1819 12.8873 51.6833 12.2753 50.9579 11.822C50.2553 11.346 49.4506 11.108 48.5439 11.108C47.8866 11.108 47.3653 11.244 46.9799 11.516C46.6173 11.788 46.4359 12.162 46.4359 12.638C46.4359 12.8873 46.5039 13.114 46.6399 13.318C46.7759 13.522 46.9913 13.7033 47.2859 13.862C47.6033 14.0207 47.9886 14.168 48.4419 14.304L51.3999 15.188C52.9413 15.6413 54.1199 16.3327 54.9359 17.262C55.7519 18.1687 56.1599 19.2907 56.1599 20.628C56.1599 21.784 55.8539 22.7927 55.2419 23.654C54.6526 24.5153 53.8253 25.1953 52.7599 25.694C51.6946 26.17 50.4366 26.408 48.9859 26.408ZM57.168 26V7.436H62.268V26H57.168ZM57.168 5.77V0.669998H62.268V5.77H57.168ZM73.072 33.48C71.644 33.48 70.318 33.242 69.094 32.766C67.87 32.29 66.816 31.6213 65.932 30.76C65.0707 29.9213 64.4473 28.924 64.062 27.768L68.788 26.102C69.0373 26.9633 69.5473 27.6433 70.318 28.142C71.0887 28.6407 72.0067 28.89 73.072 28.89C73.9107 28.89 74.636 28.7313 75.248 28.414C75.86 28.1193 76.3247 27.6773 76.642 27.088C76.982 26.4987 77.152 25.8073 77.152 25.014V20.764L78.138 21.988C77.5033 23.0307 76.6873 23.8127 75.69 24.334C74.6927 24.8327 73.5253 25.082 72.188 25.082C70.4653 25.082 68.924 24.6967 67.564 23.926C66.204 23.1327 65.1387 22.056 64.368 20.696C63.5973 19.3133 63.212 17.7493 63.212 16.004C63.212 14.2587 63.5973 12.7173 64.368 11.38C65.1387 10.02 66.1927 8.95467 67.53 8.184C68.8673 7.41333 70.386 7.028 72.086 7.028C73.4233 7.028 74.5907 7.3 75.588 7.844C76.5853 8.36533 77.4353 9.17 78.138 10.258L77.492 11.482V7.436H82.252V25.014C82.252 26.646 81.8553 28.0967 81.062 29.366C80.2687 30.658 79.1807 31.6667 77.798 32.392C76.438 33.1173 74.8627 33.48 73.072 33.48ZM72.902 20.458C73.7633 20.458 74.5113 20.2767 75.146 19.914C75.7807 19.5513 76.268 19.0413 76.608 18.384C76.9707 17.7267 77.152 16.956 77.152 16.072C77.152 15.188 76.9707 14.4173 76.608 13.76C76.2453 13.08 75.7467 12.5587 75.112 12.196C74.4773 11.8107 73.7407 11.618 72.902 11.618C72.0407 11.618 71.27 11.8107 70.59 12.196C69.9327 12.5587 69.4113 13.08 69.026 13.76C68.6633 14.4173 68.482 15.188 68.482 16.072C68.482 16.9333 68.6633 17.6927 69.026 18.35C69.4113 19.0073 69.9327 19.5287 70.59 19.914C71.27 20.2767 72.0407 20.458 72.902 20.458ZM83.9669 26V7.436H88.7269V11.108L88.4549 10.292C88.8855 9.18133 89.5769 8.36533 90.5289 7.844C91.5035 7.3 92.6369 7.028 93.9289 7.028C95.3342 7.028 96.5582 7.32267 97.6009 7.912C98.6662 8.50133 99.4935 9.32867 100.083 10.394C100.672 11.4367 100.967 12.6607 100.967 14.066V26H95.8669V15.154C95.8669 14.4287 95.7195 13.8053 95.4249 13.284C95.1529 12.7627 94.7562 12.3547 94.2349 12.06C93.7362 11.7653 93.1469 11.618 92.4669 11.618C91.8095 11.618 91.2202 11.7653 90.6989 12.06C90.1775 12.3547 89.7695 12.7627 89.4749 13.284C89.2029 13.8053 89.0669 14.4287 89.0669 15.154V26H83.9669ZM111.868 26.408C110.282 26.408 108.786 26.1247 107.38 25.558C105.998 24.9687 104.796 24.1413 103.776 23.076C102.779 22.0107 102.031 20.7527 101.532 19.302L105.85 17.364C106.485 18.7467 107.358 19.8347 108.468 20.628C109.602 21.4213 110.848 21.818 112.208 21.818C112.934 21.818 113.557 21.7047 114.078 21.478C114.6 21.2513 115.008 20.9453 115.302 20.56C115.597 20.152 115.744 19.676 115.744 19.132C115.744 18.5427 115.563 18.044 115.2 17.636C114.838 17.2053 114.271 16.8653 113.5 16.616L108.536 14.984C106.519 14.3267 105 13.3973 103.98 12.196C102.96 10.972 102.45 9.51 102.45 7.81C102.45 6.314 102.813 4.99933 103.538 3.866C104.286 2.73267 105.318 1.84867 106.632 1.214C107.97 0.579332 109.5 0.261999 111.222 0.261999C112.741 0.261999 114.146 0.522666 115.438 1.044C116.73 1.56533 117.841 2.302 118.77 3.254C119.722 4.206 120.436 5.35067 120.912 6.688L116.628 8.626C116.152 7.44733 115.438 6.52933 114.486 5.872C113.534 5.192 112.446 4.852 111.222 4.852C110.52 4.852 109.896 4.96533 109.352 5.192C108.808 5.41866 108.389 5.74733 108.094 6.178C107.8 6.586 107.652 7.062 107.652 7.606C107.652 8.19533 107.845 8.71667 108.23 9.17C108.616 9.60067 109.194 9.94067 109.964 10.19L114.826 11.754C116.866 12.4113 118.385 13.3293 119.382 14.508C120.402 15.6867 120.912 17.126 120.912 18.826C120.912 20.2993 120.527 21.614 119.756 22.77C118.986 23.9033 117.92 24.7987 116.56 25.456C115.223 26.0907 113.659 26.408 111.868 26.408ZM131.196 26.204C128.952 26.204 127.207 25.6033 125.96 24.402C124.736 23.178 124.124 21.478 124.124 19.302V11.856H120.996V7.436H121.166C122.118 7.436 122.843 7.198 123.342 6.722C123.863 6.246 124.124 5.532 124.124 4.58V3.22H129.224V7.436H133.576V11.856H129.224V18.962C129.224 19.5967 129.337 20.1293 129.564 20.56C129.791 20.968 130.142 21.274 130.618 21.478C131.094 21.682 131.683 21.784 132.386 21.784C132.545 21.784 132.726 21.7727 132.93 21.75C133.134 21.7273 133.349 21.7047 133.576 21.682V26C133.236 26.0453 132.851 26.0907 132.42 26.136C131.989 26.1813 131.581 26.204 131.196 26.204ZM134.525 26V7.436H139.285V11.89L138.945 11.244C139.353 9.68 140.021 8.626 140.951 8.082C141.903 7.51533 143.025 7.232 144.317 7.232H145.405V11.652H143.807C142.56 11.652 141.551 12.0373 140.781 12.808C140.01 13.556 139.625 14.6213 139.625 16.004V26H134.525ZM145.6 26V7.436H150.7V26H145.6ZM145.6 5.77V0.669998H150.7V5.77H145.6ZM152.392 32.8V7.436H157.152V10.972L156.71 9.952C157.322 9.02267 158.149 8.30867 159.192 7.81C160.257 7.28867 161.47 7.028 162.83 7.028C164.598 7.028 166.196 7.45867 167.624 8.32C169.052 9.18133 170.185 10.3487 171.024 11.822C171.863 13.2727 172.282 14.9047 172.282 16.718C172.282 18.5087 171.863 20.1407 171.024 21.614C170.208 23.0873 169.086 24.2547 167.658 25.116C166.23 25.9773 164.609 26.408 162.796 26.408C161.527 26.408 160.348 26.1813 159.26 25.728C158.195 25.252 157.333 24.5607 156.676 23.654L157.492 22.6V32.8H152.392ZM162.184 21.818C163.136 21.818 163.975 21.6027 164.7 21.172C165.425 20.7413 165.992 20.1407 166.4 19.37C166.808 18.5993 167.012 17.7153 167.012 16.718C167.012 15.7207 166.808 14.848 166.4 14.1C165.992 13.3293 165.425 12.7287 164.7 12.298C163.975 11.8447 163.136 11.618 162.184 11.618C161.277 11.618 160.461 11.8333 159.736 12.264C159.033 12.6947 158.478 13.2953 158.07 14.066C157.685 14.8367 157.492 15.7207 157.492 16.718C157.492 17.7153 157.685 18.5993 158.07 19.37C158.478 20.1407 159.033 20.7413 159.736 21.172C160.461 21.6027 161.277 21.818 162.184 21.818ZM180.505 26.408C178.465 26.408 176.685 25.932 175.167 24.98C173.671 24.0053 172.651 22.702 172.107 21.07L175.847 19.302C176.323 20.2993 176.969 21.0813 177.785 21.648C178.601 22.2147 179.507 22.498 180.505 22.498C181.23 22.498 181.785 22.3507 182.171 22.056C182.556 21.7613 182.749 21.3533 182.749 20.832C182.749 20.56 182.681 20.3333 182.545 20.152C182.409 19.948 182.205 19.7667 181.933 19.608C181.661 19.4493 181.321 19.3133 180.913 19.2L177.751 18.316C176.232 17.8853 175.065 17.194 174.249 16.242C173.433 15.2673 173.025 14.1227 173.025 12.808C173.025 11.652 173.319 10.6433 173.909 9.782C174.498 8.92067 175.325 8.252 176.391 7.776C177.456 7.27733 178.68 7.028 180.063 7.028C181.876 7.028 183.463 7.45867 184.823 8.32C186.205 9.15867 187.18 10.3487 187.747 11.89L183.973 13.658C183.701 12.8873 183.202 12.2753 182.477 11.822C181.774 11.346 180.969 11.108 180.063 11.108C179.405 11.108 178.884 11.244 178.499 11.516C178.136 11.788 177.955 12.162 177.955 12.638C177.955 12.8873 178.023 13.114 178.159 13.318C178.295 13.522 178.51 13.7033 178.805 13.862C179.122 14.0207 179.507 14.168 179.961 14.304L182.919 15.188C184.46 15.6413 185.639 16.3327 186.455 17.262C187.271 18.1687 187.679 19.2907 187.679 20.628C187.679 21.784 187.373 22.7927 186.761 23.654C186.171 24.5153 185.344 25.1953 184.279 25.694C183.213 26.17 181.955 26.408 180.505 26.408Z"
+                    fill="black" />
+            </svg>
+        </div>
+    </div>
+
+
+    <form class="banner-form-holder" onsubmit="return OnSubmitQuote(event)" data-lenis-prevent>
+        <button type="button" class="close-side-form">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(243,131,19,1)">
+                <path
+                    d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                </path>
+            </svg>
+        </button>
+        <h3>Got A <span>Project?</span></h3>
+        <p class="mb-[20px]">We'd love to hear about what you're looking for. Give us a few details below and we'll be
+            in
+            touch.</p>
+        <p class="choose-options-below mb-[20px]">Choose your options below</p>
+        <div class="checkbox-holder">
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Mobile App" id="mobile-app">
+                <label for="Mobile App Development">Mobile App Development</label>
+            </div>
+
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="UIUX Design" id="uiux">
+                <label for="uiux">Flutter App Development</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Web Development" id="website">
+                <label for="website">React Native App Development</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">UIUX Design</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Website Development</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Custom Web Development</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Wordpress/ShopifyDevelopment</label>
+            </div>
+            <div class="checkbox-item">
+                <input type="radio" name="mainServiceNameHead" class="servicechk" value="Custom Web" id="custom-web">
+                <label for="custom-web">Other</label>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="cus-fields-holder">
+            <div class="grid grid-cols-1 gap-4 mt-5">
+
+                <div class="flex  gap-4">
+                    <div class="cus-field-box max-w-[134px]">
+                        <input type="text" id="fullname" required="" name="name" placeholder="">
+                        <label for="fullname">Full Name</label>
+                    </div>
+                    <div class="cus-field-box max-w-[233px]">
+                        <input type="email" id="email" required="" name="email" placeholder="">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="cus-field-box max-w-[271px]">
+                        <input type="tel" id="phone" required="" name="phone" placeholder="">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                </div>
+
+
+                <div class="cus-field-box max-w-[372px]">
+                    <input type="text" id="project-info" required="" name="details" placeholder="">
+                    <label for="project-info">Company Name</label>
+                </div>
+
+                <div class="cus-field-box">
+                    <input type="text" id="project-info" required="" name="details" placeholder="">
+                    <label for="project-info">TTell us about your project</label>
+                </div>
+
+
+                <div class="w-full">
+                    <div class="form-submit-holder">
+                        <button type="submit" class="w-full">Submit Form</button>
+                    </div>
+                    <p class="keep-info">We'll keep your information in our CRM to respond to your request. For more
+                        details, consult our <a href="#"> privacy policy</a></p>
+                </div>
+
+                <div class="w-full">
+                    <div class="alertsuccess hidden">
+                        <span>Success! Form has been submitted</span>
+                    </div>
+                    <div class="alertfail hidden">
+                        <span>Success! Form has been submitted</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+
+    <header class="cus-site-header">
+        <div class="container">
+            <div class="header-content-holder">
+                <a href="/" class="head-logo">
+                    <img src="assets/images/DesignStrips.svg" alt="Logo">
+                </a>
+                <div class="header-right">
+                    <a href="#" class="book-call-btn site-btn open-form">Get in Touch</a>
+                    <button class="menu-btn" type="button" id="menuBtn">
+                        <span class="menu-line"></span>
+                        <span class="menu-line"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="mega-menu-holder" data-lenis-prevent>
+        <div class="mega-menu-content-box">
+            <button class="cus-close-menu" id="closeMenuBtn">
+                <span class="close-line"></span>
+                <span class="close-line"></span>
+            </button>
+            <div class="nav-text">
+                <h4>Navigation</h4>
+            </div>
+            <div class="menu-set-holder">
+                <div class="menu-set-holder-left">
+                    <div class="menu-set menu-set-1">
+                        <button type="button">
+                            Services
+                            <img src="assets/images/menu-arrow.png" alt="Arrow">
+                        </button>
+                        <button type="button">
+                            Technologies
+                            <img src="assets/images/menu-arrow.png" alt="Arrow">
+                        </button>
+                        <a href="#">
+                            Case Studies
+                            <span>10</span>
+                        </a>
+                        <a href="#">
+                            Insights
+                            <img src="assets/images/menu-arrow.png" alt="Arrow">
+                        </a>
+                    </div>
+                    <div class="menu-set menu-set-2">
+                        <button type="button" class="selected-btn-parent">
+                            Services
+                            <img src="assets/images/menu-arrow-back.png" alt="Arrow">
+                        </button>
+                        <button type="button">
+                            Mobile App Dev
+                        </button>
+                        <a href="#">
+                            Website Dev
+                        </a>
+
+                    </div>
+                    <div class="menu-set menu-set-3">
+                        <button type="button">
+                            Services
+                            <img src="assets/images/menu-arrow.png" alt="Arrow">
+                        </button>
+                        <button class="selected-btn-parent" type="button">
+                            Technologies
+                            <img src="assets/images/menu-arrow-back.png" alt="Arrow">
+                        </button>
+                        <a href="#">Languages </a>
+                        <a href="#">Platforms </a>
+                    </div>
+                </div>
+                <div class="menu-set-holder-right">
+
+                    <div class="hover-box h-box-1">
+                        <h4>Primary</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Mobile App Development Service</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Flutter App Development</a>
+                            </li>
+                            <li>
+                                <a href="#">React Native App Development</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hover-box h-box-2">
+                        <h4>Primary</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Web Development</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Custom website Development</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hover-box h-box-3">
+                        <h4>IT Infrastructure</h4>
+                        <ul>
+                            <li><a href="#">LAN & WAN Networking</a></li>
+                            <li><a href="#">Network and Cyber Security</a></li>
+                            <li><a href="#">Server and Storage</a></li>
+                            <li><a href="#">Desktops, Laptops and thin Clients</a></li>
+                            <li><a href="#">Datacenter and Power</a></li>
+                            <li><a href="#">Wifi Solutions</a></li>
+                            <li><a href="#">IP Surveillance</a></li>
+                            <li><a href="#">Access Control</a></li>
+                            <li><a href="#">Structured Cabling</a></li>
+                            <li><a href="#">IP Telephony</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hover-box h-box-4">
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>
+                                <a href="#">.Net</a>
+                            </li>
+
+                            <li>
+                                <a href="#">HTML5</a>
+                            </li>
+                            <li>
+                                <a href="#">Java</a>
+                            </li>
+                            <li>
+                                <a href="#">Node.Js</a>
+                            </li>
+                            <li>
+                                <a href="#">PHP</a>
+                            </li>
+                            <li>
+                                <a href="#">Python</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hover-box h-box-5">
+                        <h4>Platforms</h4>
+                        <ul>
+                            <li>
+                                <a href="#">Azure</a>
+                            </li>
+
+                            <li>
+                                <a href="#">GCP</a>
+                            </li>
+                            <li>
+                                <a href="#">Oracle</a>
+                            </li>
+                            <li>
+                                <a href="#">SAP</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="hover-box h-box-6">
+                        <h4>Insights</h4>
+                        <ul>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="deck-btn">Download Deck </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cus-menu-bottom">
+                <div class="cus-menu-bottom-left">
+                    <p>Follow us</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/facebook-icon.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/instagram-icon.png" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/whatsapp-icon.png" alt="Whatsapp">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/youtube-icon.png" alt="Youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="assets/images/twitter-icon.png" alt="Twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button type="button" class="get-in-touch-header site-btn open-form">Get In Touch</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="case-study-banner">
+        <div class="container">
+            <div class="bnn-top csb-row">
+                <div class="cs-c1">
+                    <h1 class="spplit">Case<br /> Studies</h1>
+                </div>
+                <div class="bnn-bc2">
+                    <a href="#" class="touch-ico">
+                        <img src="assets/images/roll.png" alt="">
+                        <video src="assets/videos/avatar.mp4" autoplay muted loop playsinline></video>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-[#000000] py-[100px] portfolio-sec">
+        <div class="container">
+
+            <div class="work-tab-holder">
+                <div class="flex items-center gap-[20px] mb-[60px]">
+                    <button type="button" data-filter="all"
+                        class="filter-btn active text-white text-[12px] bg-[#545CFF] px-[40px] py-[10px] rounded-[50px]">ALL</button>
+                    <button type="button" data-filter="website"
+                        class="filter-btn text-white text-[12px] bg-transparent border border-[#545CFF] px-[40px] py-[10px] rounded-[50px]">WEBSITE
+                        DEVELOPMENT</button>
+                    <button type="button" data-filter="app"
+                        class="filter-btn text-white text-[12px] bg-transparent border border-[#545CFF] px-[40px] py-[10px] rounded-[50px]">APP
+                        DEVELOPMENT</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 max-w-[1000px] mx-auto gap-x-[30px] gap-y-[120px]" id="work-cards-container">
+                <div class="work-card" data-category="app">
+                    <a href="#">
+                        <img src="assets/images/workcard-01-min.png" alt="">
+                        <h4>Synchronised Quiz - App</h4>
+                        <p>App Design And Development | UIUX</p>
+                    </a>
+                </div>
+                <div class="work-card" data-category="website">
+                    <a href="#">
+                        <img src="assets/images/workcard-02-min.png" alt="">
+                        <h4>AA Studios - Wesbite Design</h4>
+                        <p>Website Design and Development | UIUX</p>
+                    </a>
+                </div>
+                <div class="work-card" data-category="app">
+                    <a href="#">
+                        <img src="assets/images/workcard-03-min.png" alt="">
+                        <h4>Mauve Originals - Clothing Brand</h4>
+                        <p>Website Design And Development | UIUX</p>
+                    </a>
+                </div>
+                <div class="work-card" data-category="website">
+                    <a href="#">
+                        <img src="assets/images/workcard-04-min.png" alt="">
+                        <h4>Al Quran Al Kreem - App</h4>
+                        <p>App Design And Development | UIUX</p>
+                    </a>
+                </div>
+                <div class="work-card" data-category="website">
+                    <a href="#">
+                        <img src="assets/images/workcard-05-min.png" alt="">
+                        <h4>Pleniage - E-Commerce Platform</h4>
+                        <p>Website Design and Development | UIUX</p>
+                    </a>
+                </div>
+                <div class="work-card" data-category="app">
+                    <a href="#">
+                        <img src="assets/images/workcard-06-min.png" alt="">
+                        <h4>DHP - On Demand Application For Overseas Pakistani</h4>
+                        <p>App Design And Development | UIUX</p>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="load-more flex justify-between items-center mt-[120px]">
+                <h4 class="h4 text-white">Want to see<br />
+                    more?</h4>
+
+                <button type="button" class="site-btn invert-btn" id="viewAllBtn">View all Case study</button>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class=" pt-[100px]">
+        <div class="container">
+            <h4 class="h4 text-black text-center">Clients Voices</h4>
+
+
+            <div class="swiper prob-swiper-no-ap mt-[40px]">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="client-voice-box">
+                            <h5>E-Commerce Solutions</h5>
+                            <h6>We develop E-Commerce sites that boost conversion,
+                                fuel growth and deliver impactful results. We don't do cookie-cutter solutions, only a
+                                bespoke
+                                strategy for your specific challenges and goals, without compromises on creativity or
+                                performance.</h6>
+                            <div class="flex items-center gap-[10px]">
+                                <img src="https://picsum.photos/200/300" alt="" />
+                                <p>Skintastic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-voice-box">
+                            <h5>Mobile App Development</h5>
+                            <h6>Our team creates intuitive and engaging mobile applications that provide real value to
+                                users.
+                                We focus on delivering seamless experiences across all platforms while ensuring optimal
+                                performance and user satisfaction.</h6>
+                            <div class="flex items-center gap-[10px]">
+                                <img src="https://picsum.photos/200/300" alt="" />
+                                <p>AppTech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="client-voice-box">
+                            <h5>Web Development</h5>
+                            <h6>We craft responsive and dynamic websites that not only look great but also perform
+                                exceptionally. Our solutions are tailored to meet specific business needs while ensuring
+                                scalability and maintainability.</h6>
+                            <div class="flex items-center gap-[10px]">
+                                <img src="https://picsum.photos/200/300" alt="" />
+                                <p>WebCraft Pro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="grid grid-cols-3 gap-[30px] mt-[60px]">
+                <div class="client-voice-box">
+                    <h5>E-Commerce Solutions</h5>
+                    <h6>We develop E-Commerce sites that boost conversion,
+                        fuel growth and deliver impactful results. We don't do cookie-cutter solutions, only a bespoke
+                        strategy for your specific challenges and goals, without compromises on creativity or
+                        performance.</h6>
+                    <div class="flex items-center gap-[10px]">
+                        <img src="https://picsum.photos/200/300" alt="" />
+                        <p>Skintastic</p>
+                    </div>
+                </div>
+
+                <div class="client-voice-box">
+                    <h5>E-Commerce Solutions</h5>
+                    <h6>We develop E-Commerce sites that boost conversion,
+                        fuel growth and deliver impactful results. We don't do cookie-cutter solutions, only a bespoke
+                        strategy for your specific challenges and goals, without compromises on creativity or
+                        performance.</h6>
+                    <div class="flex items-center gap-[10px]">
+                        <img src="https://picsum.photos/200/300" alt="" />
+                        <p>Skintastic</p>
+                    </div>
+                </div>
+
+                <div class="client-voice-box">
+                    <h5>E-Commerce Solutions</h5>
+                    <h6>We develop E-Commerce sites that boost conversion,
+                        fuel growth and deliver impactful results. We don't do cookie-cutter solutions, only a bespoke
+                        strategy for your specific challenges and goals, without compromises on creativity or
+                        performance.</h6>
+                    <div class="flex items-center gap-[10px]">
+                        <img src="https://picsum.photos/200/300" alt="" />
+                        <p>Skintastic</p>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <footer class="site-foot">
+        <div class="container">
+            <div class="foot-follow">
+                <div class="follow-col1">
+                    <h2>We take pride in creating unforgettable digital experiences, brands, and websites alongside
+                        people like you.</h2>
+                </div>
+                <div class="follow-col2">
+                    <div class="follow-bar">
+                        <span>Follow us</span>
+                        <ul class="socials">
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/foot-INSTA.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/foot-FACEBOOK.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://" target="_blank" rel="noopener noreferrer">
+                                    <img src="assets/images/foot-W1.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-git">
+                <div class="git-col1">
+                    <span>Get in touch</span>
+                    <ul>
+                        <li><a href="#">(786) 527-2456</a></li>
+                        <li><a href="#">Info@designstrips.com</a></li>
+                        <li><a href="#">Maimi Florida 33179, United States</a></li>
+                    </ul>
+                </div>
+                <div class="git-col2">
+                    <div class="git-cell">
+                        <h3>Let's get started</h3>
+                        <p>We'd love to hear about your project.</p>
+                        <a href="#" class="site-btn open-form">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-cr">
+                <div class="fcr-col1">
+                    <p><a href="#">© 2024 Designstrips</a> · All rights reserved.</p>
+                </div>
+                <div class="fcr-col2">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.getElementById('work-cards-container');
+            const cards = container.getElementsByClassName('work-card');
+            const filterBtns = document.getElementsByClassName('filter-btn');
+            const viewAllBtn = document.getElementById('viewAllBtn');
+            let showingAll = false;
+
+            // Initially show only first 2 cards
+            function initializeCards() {
+                Array.from(cards).forEach((card, index) => {
+                    card.style.display = index < 2 ? 'block' : 'none';
+                });
+            }
+
+            // Filter cards based on category
+            function filterCards(category) {
+                Array.from(cards).forEach((card, index) => {
+                    const shouldShow = (category === 'all' || card.dataset.category === category);
+                    card.style.display = shouldShow && (showingAll || index < 2) ? 'block' : 'none';
+                });
+            }
+
+            // Handle filter button clicks
+            Array.from(filterBtns).forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Update active state
+                    Array.from(filterBtns).forEach(b => {
+                        b.classList.remove('active');
+                        b.classList.remove('bg-[#545CFF]');
+                        b.classList.add('bg-transparent');
+                        b.classList.add('border');
+                    });
+                    this.classList.add('active');
+                    this.classList.add('bg-[#545CFF]');
+                    this.classList.remove('bg-transparent');
+                    this.classList.remove('border');
+
+                    // Filter cards
+                    filterCards(this.dataset.filter);
+                });
+            });
+
+            // Handle View All button click
+            viewAllBtn.addEventListener('click', function () {
+                showingAll = !showingAll;
+                this.textContent = showingAll ? 'Show Less' : 'View all Case study';
+
+                const activeFilter = document.querySelector('.filter-btn.active').dataset.filter;
+                filterCards(activeFilter);
+            });
+
+            // Initialize the view
+            initializeCards();
+        });
+    </script>
+
+</body>
+
+</html>
