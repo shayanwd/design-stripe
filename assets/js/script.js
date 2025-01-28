@@ -342,7 +342,7 @@ window.addEventListener("DOMContentLoaded", () => {
 gsap.set(".bnn-top h1 .word", {
     y: "100%",
 })
-gsap.set(".bnn-top p, .bnn-bc1 span, .bnn-bc1 p, .touch-block p, .touch-ico", {
+gsap.set(".bnn-top p, .bnn-bc1 .h4, .bnn-bc1 span, .bnn-bc1 p, .touch-block p, .touch-ico", {
     y: "100",
     opacity: 0,
 })
@@ -359,7 +359,7 @@ function entryAnim() {
         y: 0,
         stagger: 0.2,
     }, "s")
-        .to(".bnn-bc1 span, .bnn-bc1 p, .touch-block p, .touch-ico", {
+        .to(".bnn-top p, .bnn-bc1 .h4, .bnn-bc1 span, .bnn-bc1 p, .touch-block p, .touch-ico", {
             y: 0,
             opacity: 1,
             stagger: 0.05,
@@ -427,7 +427,7 @@ if (slid) {
             slidesPerView: "auto",
             spaceBetween: 30,
             rewind: true,
-            speed: 2500,
+            speed: 6500,
             autoplay: {
                 delay: 0,
             },
