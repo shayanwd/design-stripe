@@ -35,6 +35,32 @@
         padding: 20px 20px 30px;
     }
 
+
+    .mega-menu-content-box {
+        padding: 35px;
+    }
+
+    .menu-set a,
+    .menu-set button {
+        font-size: 40px;
+    }
+
+    .get-in-touch-header {
+        font-size: 20px;
+    }
+
+    .project-sec {
+        padding: 80px 0;
+    }
+
+    .pr-box:not(:first-child) {
+        margin-top: 80px;
+        flex-direction: column;
+    }
+
+    .stats-title h3 {
+        font-size: 40px;
+    }
 }
 
 
@@ -73,6 +99,276 @@
 
     .cus-contact-holder {
         padding: 40px 0;
+    }
+
+    .project-sec {
+        padding: 40px 0;
+    }
+
+    .bnn-b-row {
+        flex-direction: column;
+        align-items: inherit;
+        justify-content: inherit;
+    }
+
+    .touch-block {
+        margin: 0;
+    }
+
+    .touch-block p {
+        font-size: 16px;
+    }
+
+    .love-sec {
+        padding: 20px 0;
+    }
+
+    .lt-col1 h3 {
+
+        font-size: 20px;
+        line-height: inherit;
+    }
+
+    .love-sec>div>span {
+        color: #FFF;
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .cs-list li svg {
+        width: 20px;
+    }
+
+    .cs-list li img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cs-list li .csl-desc b {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    .love-row {
+        padding: 20px 20px;
+        flex-direction: column;
+        gap: 20px;
+        background: rgba(255, 255, 255, 0.132);
+        border-radius: 10px;
+        align-items: flex-start;
+    }
+
+    .love-rows {
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .love-brands {
+        padding-top: 40px;
+    }
+
+    .love-row .cs-list {
+        opacity: 1 !important;
+    }
+
+    .work-col1 h2 {
+
+        font-size: 45px;
+
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .pr-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pr-box-cntn {
+        width: 100%;
+    }
+
+    .pr-img {
+        width: 100%;
+        max-width: 100%;
+        height: 100%;
+        min-height: auto;
+        order: -1;
+
+    }
+
+    .work-col1 p {
+
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .work-sec.work-scroll {
+        padding: 60px 0 !important;
+    }
+
+    .pr-box:not(:first-child) {
+        margin-top: 40px;
+    }
+
+    .app .pr-box-cntn .no-box-area:first-child {
+
+        padding-right: 20px;
+        margin-right: 20px;
+        min-height: 0;
+    }
+
+    .app .pr-box-cntn .no-box-area h4 {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .app .pr-box-cntn {
+        text-align: center;
+    }
+
+    .app .pr-box-cntn .no-box-area span {
+        font-size: 16px;
+        line-height: inherit;
+        text-align: center;
+    }
+
+    .project-sec .additional-content {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: inherit;
+        margin-top: 40px;
+    }
+
+    .stats-title h3 {
+        font-size: 25px;
+    }
+
+    .stats-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .stats-sec {
+        padding-bottom: 40px !important;
+    }
+
+    .stats-container {
+        gap: 20px;
+    }
+
+    .stats-col2 p {
+
+        font-size: 16px;
+    }
+
+    .book-cell .book-ctas {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+    .skillset-row {
+
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .book-cell {
+        margin: 0;
+        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .skillset-col1 h2 {
+        font-size: 40px;
+        line-height: inherit;
+    }
+
+    .book-cell h3 {
+
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .book-cell p {
+        color: #FFF;
+        font-size: 16px;
+        line-height: inherit;
+    }
+
+    .book-ctas .site-btn {
+        padding: 12px 18px;
+        font-size: 14px;
+
+        line-height: inherit;
+    }
+
+    .skillset-sec {
+        padding: 40px 0;
+    }
+
+    .stories-sec {
+        padding: 40px 0;
+    }
+
+    .story-top h2 {
+        font-size: 40px;
+    }
+
+    .rev-card {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .rev-card p {
+        font-size: 16px;
+    }
+
+    .rev-info img {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .revs-holder {
+        gap: 20px;
+    }
+
+    .main-banner-sec {
+        padding-bottom: 0;
+        padding-top: 140px;
+    }
+
+    .work-card {
+        width: 250px;
+
+    }
+
+    .work-card h4 {
+
+        font-size: 16px;
+
+        line-height: inherit;
+        margin-bottom: 0;
+    }
+
+    .work-col1 .site-btn {
+        padding: 16px 30px;
+        margin-top: 20px;
+        font-size: 14px;
+
+    }
+
+    .work-card p {
+
+        font-size: 12px;
+        line-height: inherit;
     }
 
 

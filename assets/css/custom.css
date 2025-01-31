@@ -548,18 +548,3 @@ label {
 .client-voice-box {
     height: 100%;
 }
-
-@media (max-width: 991px) {
-    .mega-menu-content-box {
-        padding: 35px;
-    }
-
-    .menu-set a,
-    .menu-set button {
-        font-size: 40px;
-    }
-
-    .get-in-touch-header {
-        font-size: 20px;
-    }
-}
