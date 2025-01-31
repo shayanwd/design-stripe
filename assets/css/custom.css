@@ -10,7 +10,7 @@
     max-height: 100vh !important;
     background-color: #000000e1;
     padding: 30px 40px;
-    z-index: 9999;
+    z-index: 99999999999;
     backdrop-filter: blur(10px);
     transition: 0.3s ease-in;
 }
@@ -547,4 +547,19 @@ label {
 
 .client-voice-box {
     height: 100%;
+}
+
+@media (max-width: 991px) {
+    .mega-menu-content-box {
+        padding: 35px;
+    }
+
+    .menu-set a,
+    .menu-set button {
+        font-size: 40px;
+    }
+
+    .get-in-touch-header {
+        font-size: 20px;
+    }
 }
