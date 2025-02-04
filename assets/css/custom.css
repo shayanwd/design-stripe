@@ -509,6 +509,8 @@ label {
     border: 1.5px solid #545CFF;
     padding: 30px;
     border-radius: 40px;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
 }
 
 .client-voice-box h5 {

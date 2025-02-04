@@ -483,6 +483,7 @@ img {
 .main-banner-sec {
     width: 100%;
     padding: 200px 0px 60px;
+    overflow: hidden;
 }
 
 .bnn-top {
@@ -1763,6 +1764,7 @@ ul.tabs-nav li.active {
 .case-study-banner {
     width: 100%;
     padding: 220px 0px 110px;
+    overflow: hidden;
 }
 
 .csb-row {
@@ -2142,7 +2144,9 @@ section:has(.prob-swiper-no-ap) {
 }
 
 .logos-sec {
+    width: 100%;
     display: grid;
     gap: 40px;
     padding: 20px 0px;
+    overflow: hidden;
 }
