@@ -521,8 +521,8 @@ var swiper = new Swiper('.relatedCaseStudies', {
     speed: 800,
     effect: 'slide',
     breakpoints: {
-        320: {
-            slidesPerView: 1,
+        20: {
+            slidesPerView: "auto",
             spaceBetween: 20
         },
         768: {
